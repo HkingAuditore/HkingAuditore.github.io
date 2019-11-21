@@ -1,0 +1,173 @@
+        @font-face {
+            font-family: myFont;
+            src: url('../fonts/xiyuan.ttf');
+        }
+        
+        @font-face {
+            font-family: mainTitle;
+            src: url('../fonts/shanghei.otf');
+        }
+        
+        header {
+            margin-top: -0.5%;
+        }
+        
+        body,
+        .container::before {
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .blurContainer {
+            margin-left: auto;
+            margin-right: auto;
+            width: 2000px;
+            height: 1000px;
+            position: relative;
+            -moz-border-radius: 2em;
+            -webkit-border-radius: 2em;
+            border-radius: 10em;
+            color: rgb(24, 24, 24);
+            margin-top: 100px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            -moz-box-shadow: 3px 5px 10px #333333;
+            -webkit-box-shadow: 3px 5px 10px #333333;
+            box-shadow: 0px 20px 20px 5px #3838389a;
+            overflow: hidden;
+        }
+        
+        .blurContainer::before {
+            width: 110%;
+            height: 110%;
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-attachment: fixed;
+            filter: blur(10px);
+        }
+        
+        .blurContainer::after {
+            color: black;
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.575);
+        }
+        
+        p {
+            z-index: 1;
+            position: relative;
+        }
+        
+        img {
+            z-index: 1;
+            position: relative;
+        }
+        
+        .box {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .mainBox {
+            width: 1800px;
+        }
+        
+        header.mainBar {
+            position: absolute;
+            /* text-align: right; */
+            /* background-color: rgba(147, 82, 204, 0.747); */
+            padding-top: 1%;
+            /* padding-left: 40%; */
+            width: 30vw;
+            height: 2vw;
+            /* align-items: flex-end; */
+        }
+        
+        header a {
+            text-decoration: none;
+            font-family: myFont;
+            /* height: 100%; */
+            font-size: 1vw;
+            text-align: right;
+            color: #3a3535;
+            font-weight: bold;
+            transition: 0.25s cubic-bezier(.42, 0, .58, 1);
+        }
+        
+        header a:hover {
+            font-size: 1.2vw;
+            color: #774c24;
+        }
+        
+        p mytitle {
+            /* position: absolute; */
+            text-decoration: none;
+            font-family: mainTitle;
+            /* height: 100%; */
+            font-size: 9vw;
+            text-align: left;
+            color: #3a3535;
+            /* font-weight: bold; */
+        }
+        
+        p spec {
+            font-size: 50px;
+            color: white;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.493);
+        }
+        
+        .button {
+            background-color: #FFFFFF;
+            color: #FFA200;
+            padding: 1vw 3vw;
+            font-weight: bold;
+            font-size: 3vw;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5vw;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: 4px solid #FFBA1A;
+            border-radius: 60px;
+            box-shadow: 0px 0.5vw 1vw rgba(210, 134, 11, 0.253);
+            transition-duration: 0.4s;
+            transition: 0.75s cubic-bezier(.85, 0.75, .25, 1.25);
+        }
+        
+        .button:hover {
+            background-color: #FFBA1A;
+            color: white;
+            box-shadow: 0px 0.5vw 1vw rgba(255, 121, 43, 0.226);
+        }
+        
+        .container {
+            position: absolute;
+            top: 12vw;
+            left: 6vw;
+            /* background-color: khaki; */
+            width: 40vw;
+            padding: 1vw 3vw;
+            height: 20vw;
+        }
+        
+        p.normal {
+            position: relative;
+            font-size: 1vw;
+            color: #545454;
+        }
