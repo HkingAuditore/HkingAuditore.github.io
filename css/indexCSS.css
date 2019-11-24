@@ -182,7 +182,7 @@
             width: 38px;
             height: 38px;
             border-radius: 100px;
-            background-color: palevioletred;
+            background-color: #FF7070;
             z-index: 5;
         }
         
@@ -201,11 +201,11 @@
         }
         
         .play:hover {
-            margin-top: 7px;
-            margin-left: 14px;
-            border-top: 12px solid transparent;
-            border-left: 16px solid rgb(255, 255, 255);
-            border-bottom: 12px solid transparent;
+            margin-top: 5px;
+            margin-left: 12px;
+            border-top: 14px solid transparent;
+            border-left: 20px solid rgb(255, 255, 255);
+            border-bottom: 14px solid transparent;
         }
         
         .stop {
