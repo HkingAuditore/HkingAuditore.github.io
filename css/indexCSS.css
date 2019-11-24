@@ -83,22 +83,24 @@
         }
         
         .mainBox {
-            width: 1800px;
+            width: 2500px;
         }
         
         header.mainBar {
             position: absolute;
+            vertical-align: middle;
             /* text-align: right; */
             /* background-color: rgba(147, 82, 204, 0.747); */
             padding-top: 1%;
             /* padding-left: 40%; */
-            width: 30vw;
-            height: 2vw;
+            width: 55ex;
+            height: 4ex;
             /* align-items: flex-end; */
         }
         
         header a {
             text-decoration: none;
+            vertical-align: middle;
             font-family: myFont;
             /* height: 100%; */
             font-size: 1vw;
@@ -170,4 +172,64 @@
             position: relative;
             font-size: 1vw;
             color: #545454;
+        }
+        
+        .player {
+            color: white;
+            text-align: center;
+            align-items: center;
+            vertical-align: middle;
+            width: 38px;
+            height: 38px;
+            border-radius: 100px;
+            background-color: palevioletred;
+            z-index: 5;
+        }
+        
+        .play {
+            /* background-color: white; */
+            cursor: pointer;
+            margin-top: 9px;
+            margin-left: 14px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-left: 15px solid rgb(255, 255, 255);
+            border-bottom: 10px solid transparent;
+            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.445));
+            transition: 0.25s cubic-bezier(.85, 0.75, .25, 1.25);
+        }
+        
+        .play:hover {
+            margin-top: 7px;
+            margin-left: 14px;
+            border-top: 12px solid transparent;
+            border-left: 16px solid rgb(255, 255, 255);
+            border-bottom: 12px solid transparent;
+        }
+        
+        .stop {
+            cursor: pointer;
+            width: 0;
+            height: 0;
+            margin-top: 11px;
+            margin-left: 11px;
+            border-top: 8px solid rgb(255, 255, 255);
+            border-left: 8px solid rgb(255, 255, 255);
+            border-bottom: 8px solid rgb(255, 255, 255);
+            border-right: 8px solid rgb(255, 255, 255);
+            /* width: 15px;
+            height: 15px; */
+            /* background-color: white; */
+            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.445));
+            transition: 0.25s cubic-bezier(.85, 0.75, .25, 1.25);
+        }
+        
+        .stop:hover {
+            margin-top: 9px;
+            margin-left: 9px;
+            border-top: 10px solid rgb(255, 255, 255);
+            border-left: 10px solid rgb(255, 255, 255);
+            border-bottom: 10px solid rgb(255, 255, 255);
+            border-right: 10px solid rgb(255, 255, 255);
         }
