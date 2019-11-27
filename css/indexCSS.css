@@ -115,7 +115,7 @@
             color: #774c24;
         }
         
-        p mytitle {
+        .mytitle {
             /* position: absolute; */
             text-decoration: none;
             font-family: mainTitle;
@@ -126,7 +126,7 @@
             /* font-weight: bold; */
         }
         
-        p spec {
+        .spec {
             font-size: 50px;
             color: white;
             margin: 0;
