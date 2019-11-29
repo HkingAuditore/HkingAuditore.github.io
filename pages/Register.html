@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newbie's Kitchen</title>
+    <link href="../img/icon.ico" rel="icon" type="/image/x-ico" />
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/language/zh_CN.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <link rel="stylesheet" href="../css/registerCSS.css">
+
+    <script src="../scripts/audioPlayer.js"></script>
+    <script>
+        $(document).ready(function() {
+            bsCustomFileInput.init()
+        });
+    </script>
+
+    <script src="../scripts/registerManager.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</head>
+
+<header>
+    <img src="../img/Register/kit1.png" width="100%" style="position: absolute;z-index: -1;margin: 0 auto;justify-content: center;" />
+
+    <img src="../img/logo.png" style="position:absolute; margin-left: 0.8%; margin-top: 1%;" width="100px" />
+
+    <div align="right" class="mainBar" style="float: right;right: 0;width: 1300px;margin-top: 1vw;margin-right: 1vw;">
+        <a href="" style="text-decoration: none;">关于我们</a>
+        <a href="" style="text-decoration: none;">线上预览</a>
+        <a href="" style="text-decoration: none;">预购/捐赠</a>
+        <a href="" style="text-decoration: none;">开发日志</a>
+        <div class="player" style="float:right;margin-right: 3%;margin-top: -0.1%;">
+            <div class="play" id="player" onclick="Player()">
+                <audio id="BGM" loop="" preload="">
+                    <source src="../music/做菜2无损完整 (1).mp3" />
+                </audio>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<body>
+
+    <div class="container-fluid" style="top: 15vw;position: absolute;background-color: cornflowerblue;">
+        <div class="row" style="background-color: blue; margin-right: 0;">
+            <div class=" col-2 offset-4">
+                <img src="../img/Register/组 1.png" width="200%" style="position: absolute;left: 0%;z-index: 5; margin-top: 10%;" />
+            </div>
+
+
+        </div>
+
+
+
+        <div class="container-fluid " style="position: absolute; top:12vw; padding-left: 30%; padding-right: 30%; left: 0;background-color: rgb(240, 196, 140);border-radius: 50px;padding-top: 5%;">
+            <div class=" row" style="width: 100%; margin-left: -62%;margin-top: -10%;">
+                <div class=" col-12">
+                    <div class=" container-fluid" style="width: 230%;">
+                        <div class=" row" style="background-color: rgb(255, 253, 246); padding: 8% 20% 10% 20%;border-radius: 40px;box-shadow: 2px 2px 20px 5px rgba(88, 61, 38, 0.432);">
+                            <div class=" col-12">
+                                <form class="needs-validation" action="" id="form-register" method="post" novalidate>
+                                    <div class=" row">
+                                        <div class=" col-sm-12">
+                                            <p class=" my-title" style="color: rgb(218, 98, 61);padding-bottom: 5%;font-size: 4.2vw;text-align: center;">
+                                                现在预购菜鸟厨房！
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+
+                                        <div class=" col-sm-6">
+                                            <div class="form-group">
+                                                <label class="" for="userName">用户名:</label>
+                                                <input type="text" class="form-control" name="userName" id="userName" placeholder="您的用户名" style="width: 100%;" required/>
+                                                <div class="invalid-feedback" id="userNameFeedBack">用户名不可用！</div>
+                                                <div class="valid-feedback">用户名可用！</div>
+                                            </div>
+                                        </div>
+
+                                        <div class=" col-sm-6">
+                                            <div class="form-group">
+                                                <label for="email">邮箱:</label>
+                                                <input type="email" class="form-control" id="email" placeholder="您的邮箱" style="width: 100%;" required/>
+                                                <div class="invalid-feedback">邮箱不可用！</div>
+                                                <div class="valid-feedback">邮箱可用！</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class=" col-sm-6">
+                                            <p>上传头像：</p>
+                                            <div class="custom-file" style="margin-bottom: 5%;">
+                                                <input type="file" class="custom-file-input" id="avatar_img" onchange="preview(this)" accept="image/*" required/>
+                                                <label class="custom-file-label" for="avatar_img" style="color: rgb(221, 221, 221);" data-browse="浏览...">选择头像</label>
+                                                <div class="invalid-feedback">文件不可用！</div>
+                                                <div class="valid-feedback">文件可用！</div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-sm-6" align="center">
+                                            <img src="../img/Register/组 7.png" id="avatar_preview" style="width: 10vw;height: 10vw; left:0;top: 0;border-radius: 50%;" />
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class=" col-sm-1" style="text-align: left;">
+                                            <p>性别：</p>
+                                        </div>
+                                        <div class=" col-sm-11" style="" align="left">
+                                            <label class=" custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" class=" custom-control-input" name="gender"
+                                                        value="male" checked required>
+                                                    <span class=" custom-control-label"></span>
+                                                    <span class=" custom-control" style="padding-left: 10%;">男</span>
+                                            </label>
+                                            <label class=" custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" class=" custom-control-input" name="gender"
+                                                        value="female" required>
+                                                    <span class=" custom-control-label"></span>
+                                                    <span class=" custom-control" style="padding-left: 10%;">女</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-row">
+                                        <div class=" col-sm-12">
+                                            <div class="form-group">
+                                                <label class="" for="className">所在班级:</label>
+                                                <input type="text" class="form-control" oninput="checkClass(this)" name="className" id="className" placeholder="您的班级" style="width: 100%;" required/>
+                                                <div class="invalid-feedback">这不是一个班级名称！</div>
+                                                <div class="valid-feedback">这是一个班级名称！</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class=" col-sm-12">
+                                            <div class="form-group">
+                                                <label for="pwd">密码:</label>
+                                                <input type="password" class="form-control" id="pwd" placeholder="请输入密码" required>
+                                                <div class="valid-feedback">密码可用！</div>
+                                                <div class="invalid-feedback">密码不可用！</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class=" col-sm-12">
+                                            <div class="form-group">
+                                                <label for="pwdConfirm">密码确认:</label>
+                                                <input type="password" class="form-control" id="pwdConfirm" placeholder="请输入密码" oninput="checkPwd(this)" required>
+                                                <div class="invalid-feedback" id="confirm-pwd">请确认密码！</div>
+                                                <div class="valid-feedback">密码一致！</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row" style="padding-top: 5%;">
+                                        <div class=" col-md-3 offset-md-3" style="text-align: left;">
+                                            <button class="btn custom-confirm-btn" type="submit" name="submit">确认</button>
+                                        </div>
+                                        <div class=" col-md-3" style="text-align: left;">
+                                            <button class="btn custom-reset-btn" type="reset" name="reset">重置</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function checkPwd(input) {
+
+            var pwd = document.getElementById("pwd").value;
+            // alert(pwd);
+            if (input.value != pwd) {
+                input.setCustomValidity("两次密码输入不一致！");
+                document.getElementById("confirm-pwd").innerHTML = "两次密码输入不一致！";
+            } else {
+                input.setCustomValidity('');
+            }
+        }
+
+        function checkClass(input) {
+            console.log("in!");
+            var classNum = input.value.substring(input.value.length - 4);
+            console.log(classNum);
+            var reg = /^[0-9]+$/;
+            if (!reg.test(classNum)) {
+                input.setCustomValidity("这不是一个班级名称");
+            } else {
+                input.setCustomValidity('');
+
+            }
+        }
+    </script>
+</body>
+
+</html>

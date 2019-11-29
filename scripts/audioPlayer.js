@@ -1,17 +1,13 @@
-// 播放
-play.onclick = function() {
-    if (audio.paused) {
-        audio.play();
+function Player() {
+    var player = document.getElementById("player");
+    var music = document.getElementById("BGM");
+    if (player.className == "play") {
+        player.setAttribute("class", "stop");
+        music.play();
+        // alert("play!");
+
+    } else {
+        player.setAttribute("class", "play");
+        music.pause();
     }
 }
-
-// 暂停
-pause.onclick = function() {
-    if (audio.played) {
-        audio.pause();
-    }
-}
-
-audio.addEventListener('ended', function() {
-    play.onclick();
-}, false);

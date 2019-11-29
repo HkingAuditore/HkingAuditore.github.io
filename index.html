@@ -2,20 +2,23 @@
 <html lang="zh">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <title>Newbie's Kitchen</title>
-    <link href="css/indexCSS.css" rel="stylesheet"/>
-    <link href="img/icon.ico" rel="icon" type="image/x-ico"/>
+    <link href="css/indexCSS.css" rel="stylesheet" />
+    <link href="img/icon.ico" rel="icon" type="image/x-ico" />
     <!--    <link rel="shortcut icon" href=" WebGL/TemplateData/favicon.ico">-->
     <link rel="stylesheet" href="WebGL/TemplateData/style.css">
     <script src="WebGL/TemplateData/UnityProgress.js"></script>
     <script src="WebGL/Build/UnityLoader.js"></script>
     <script src="scripts/indexJS.js"></script>
+    <script src="scripts/audioPlayer.js"></script>
 
     <script>
-        var unityInstance = UnityLoader.instantiate("unityContainer", "WebGL/Build/Output.json", {onProgress: UnityProgress});
+        var unityInstance = UnityLoader.instantiate("unityContainer", "WebGL/Build/Output.json", {
+            onProgress: UnityProgress
+        });
     </script>
 </head>
 
@@ -24,18 +27,18 @@
     <div class="mainBox">
         <div class="box" style="background-color:#FFA14E;
                 margin-top: -10px;
-                height: 200vw;width: 10%;
+                height: 165vw;width: 10%;
                 z-index: 0;right: 20%;"></div>
         <div class="box" style="background-color:#FFC44E;
                 margin-top: -10px;
-                height: 200vw;width: 10%;
+                height: 165vw;width: 10%;
                 z-index: 1;right: 10%;"></div>
         <div class="box" style="background-color:#FFE74E;
                 margin-top: -10px;right: 0;margin-right:-0.4%;
-                height: 200vw;width:12%;
+                height: 163vw;width:12%;
                 z-index: 2;right:0%;"></div>
     </div>
-    <img src="img/资源 2@4x@2x.png" style="position:absolute; margin-left: 0.8%; margin-top: 0.5%;" width="100px"/>
+    <img src="img/logo.png" style="position:absolute; margin-left: 0.8%; margin-top: 0.5%;" width="100px" />
 
     <header align="right" class="mainBar" style="margin-left: 30%;right: 31vw; top: 0.8vw;">
         <a href="" style="padding-right: 2ex;float: right;">关于我们</a>
@@ -51,119 +54,122 @@
         </div>
     </header>
 </header>
-<body>
-<img alt="" src="img/1449.png" style="position: absolute;
-            float:right;right:10%;z-index:3;top: 7vw;" width="35%"/>
 
-<div class="container">
-    <p>
+
+<body>
+    <img alt="" src="img/index/1449.png" style="position: absolute;
+            float:right;right:10%;z-index:3;top: 7vw;" width="35%" />
+
+    <div class="container">
+        <p>
             <span class="mytitle" style="position: relative; letter-spacing: -0.8vw">
                 烹饪
             </span>
-        <span class="mytitle" style="position: relative;font-size: 5vw;padding-top: 8%;left: 0;">
+            <span class="mytitle" style="position: relative;font-size: 5vw;padding-top: 8%;left: 0;">
                &
             </span>
-        <span class="mytitle" style="position: relative; letter-spacing: -0.8vw;left: -2%;">
+            <span class="mytitle" style="position: relative; letter-spacing: -0.8vw;left: -2%;">
                创造
             </span>
-    </p>
+        </p>
 
-    <div class="box" style="position:absolute;background-color:rgba(255,
+        <div class="box" style="position:absolute;background-color:rgba(255,
                 196, 78, 0.5); left: 0;width: 80%;height: 4.2vw; margin-top:
                 -13%;margin-left: 12%;">
-    </div>
-    <p style="font-size: 3vw;margin-top: -5%; color: #545454;left: 1vw;">
-        COOK&CREATE
-    </p>
-    <p class="normal" style="margin-top: -8%;left: 1vw;">
-        一步步研究迷人的美食秘方，创作出属于自己的绝世极味！<br/> 在美食小镇探寻饮食背后的奇妙故事。
-    </p>
-    <form action="">
-        <a class="button" href="#" style="position: absolute;
+        </div>
+        <p style="font-size: 3vw;margin-top: -5%; color: #545454;left: 1vw;">
+            COOK&CREATE
+        </p>
+        <p class="normal" style="margin-top: -8%;left: 1vw;">
+            一步步研究迷人的美食秘方，创作出属于自己的绝世极味！<br/> 在美食小镇探寻饮食背后的奇妙故事。
+        </p>
+        <form action="">
+            <a class="button" href="pages/Register.html" style="position: absolute;
                     top:22vw;left: 2vw;">
             现在预购
         </a>
-    </form>
-</div>
-<div align="left" class="container" style="left: 0; margin-left: -4%; top:
+        </form>
+    </div>
+    <div align="left" class="container" style="left: 0; margin-left: -4%; top:
             49.5vw">
-    <!-- <video autoplay="autoplay " width="216.5% " loop="loop " src="video/test000_x264_1.mp4 " style="z-index: 5; position:absolute; ">
+        <!-- <video autoplay="autoplay " width="216.5% " loop="loop " src="video/test000_x264_1.mp4 " style="z-index: 5; position:absolute; ">
 </video> -->
-    <video airplay="allow" autoplay="" class="video1 video" id="video" loop="" muted="" playsinline="true" preload=""
-           src="video/test000_x264_1.mp4" style="z-index: 5;
+        <video airplay="allow" autoplay="" class="video1 video" id="video" loop="" muted="" playsinline="true" preload="" src="video/test000_x264_1.mp4" style="z-index: 5;
                 position:absolute;" webkit-playsinline="true" width="216.5%" x-webkit-airplay="true"></video>
-</div>
-<div class="container" style="top:60vw;left:-1vw ;
+    </div>
+    <div class="container" style="top:60vw;left:-1vw;
             position:absolute;z-index:5;">
-    <div class="container" style="position:absolute ;top:-5vw;width:
+        <div class="container" style="position:absolute ;top:-5vw;width:
                 50vw;left: 23vw;">
-        <p>
+            <p>
                 <span class="mytitle" style="letter-spacing: -0.8vw;text-align: center;color:
                         white;text-shadow: 5px 5px 5px rgb(99, 66, 23);">
                     执掌你的厨房
             </span>
-        </p>
-    </div>
+            </p>
+        </div>
 
-    <img src="img/组 3.png" style="position: absolute; left: 2vw;top: 10vw;" width="210%"/>
-    <div class="container" style="position:absolute ;top:28vw;width:
+        <img src="img/index/组 3.png" style="position: absolute; left: 2vw;top: 10vw;" width="210%" />
+        <div class="container" style="position:absolute ;top:28vw;width:
                 50vw;left: 10vw;">
-        <img src="img/1625.png" style="border-radius: 100px;position:
-                    absolute ;" width="50%"/>
+            <img src="img/index/1625.png" style="border-radius: 100px;position:
+                    absolute ;" width="50%" />
 
-        <div class="container" style="position:absolute ;top:0vw;width:
+            <div class="container" style="position:absolute ;top:0vw;width:
                     30vw;left: 35vw;">
-            <p>
+                <p>
                     <span class="mytitle" style="text-align: left;color: rgb(145, 89,
                             6);font-size: 4vw;">
                         高自由度的世界
                     </span>
-            </p>
-            <p class="normal">
-                示例文字例文字示例文字示例文字。
-                <br/> 示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/>
-                示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/> 示例文字示例文字示例文字示例文字示例文字。
-                <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。
-            </p>
+                </p>
+                <p class="normal">
+                    示例文字例文字示例文字示例文字。
+                    <br/> 示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/> 示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/> 示例文字示例文字示例文字示例文字示例文字。
+                    <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。
+                </p>
+            </div>
         </div>
-    </div>
 
-    <div class="container" style="top:62vw;width: 50vw;left: 10vw;">
-        <div class="container" style="position:absolute ;top:1vw;width:
+        <div class="container" style="top:62vw;width: 50vw;left: 10vw;">
+            <div class="container" style="position:absolute ;top:1vw;width:
                     50vw;left: 0vw;">
-            <p style="left: 7vw;">
+                <p style="left: 7vw;">
                     <span class="mytitle" style="text-align: right;color: rgb(145, 89,
                             6);font-size: 4vw;">
                         探寻小镇的故事
                     </span>
-            </p>
-            <p class="normal" style="text-align: right; left: -15vw;">
-                示例文字示例文字示例文字示例文字。
-                <br/> 示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/>
-                示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/> 示例文字示例文字示例文字示例文字示例文字。
-                <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。
-            </p>
-        </div>
-        <img src="img/小镇.png" style="border-radius: 100px;position:
-                    absolute ;left: 45vw;" width="50%"/>
-        <!--
+                </p>
+                <p class="normal" style="text-align: right; left: -15vw;">
+                    示例文字示例文字示例文字示例文字。
+                    <br/> 示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/> 示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/> 示例文字示例文字示例文字示例文字示例文字。
+                    <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。
+                </p>
+            </div>
+            <img src="img/index/小镇.png" style="border-radius: 100px;position:
+                    absolute ;left: 45vw;" width="50%" />
+            <!--
 <p id="testID ">
     something like this
 </p>
 <p>
     <button type="button " onclick="myFunction() ">点击这里</button>
 </p> -->
-    </div>
-</div>
 
-<div class="webgl-content" style="top:180vw">
-    <div id="unityContainer" style="width: 960px; height: 600px"></div>
-    <div class="footer">
-<!--        <div class="webgl-logo"></div>-->
-<!--        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>-->
-<!--        <div class="title">NewbiesKitchen</div>-->
+        </div>
+        <img src="img/index/smoke.png" style="top: 96.5vw;left:3vw;right:5vw;filter: drop-shadow(2px 8px 6px rgba(140,111,45,0.11));position: absolute;" width="210%">
     </div>
-</div>
+
+
+
+    <div class="webgl-content" style="top:220vw;z-index:5">
+        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+            <!--        <div class="webgl-logo"></div>-->
+            <!--        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>-->
+            <!--        <div class="title">NewbiesKitchen</div>-->
+        </div>
+    </div>
 </body>
 
 </html>

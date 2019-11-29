@@ -2,12 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="509bd23f-25bc-4319-9094-26339abcfbd9" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/AboutUs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Register/kit1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Register/kit1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Register/组 6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Register/组 6@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/index/1449.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/index/1625.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/index/smoke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/index/小镇.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/index/组 3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/index/组 3@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/index/组 5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/Register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/indexCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/indexCSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1449.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1625.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/小镇.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/组 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/组 3@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/资源 2@4x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/资源 2@4x@2x.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/AboutUs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/audioPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/audioPlayer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +35,9 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="405" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="HkingAuditore.github.io" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,7 +50,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TmbjIAg60mY2U2sx16RvBgcin5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -54,19 +79,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager">
     <configuration name="Newbie'sKitchen" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="63342">
       <method v="2" />
     </configuration>
     <configuration name="Unnamed" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" nameIsGenerated="true" port="63342">
       <method v="2" />
     </configuration>
-    <configuration name="AboutUs.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/HkingAuditore.github.io/pages/AboutUs.html" useBuiltInWebServerPort="true">
+    <configuration name="Newvbie'sKitchen" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/Newbie'sKitchen/index.html" useBuiltInWebServerPort="true">
       <method v="2">
         <option name="LaunchBrowser.Before.Run" url="http://localhost:63343/Newbie'sKitchen/index.html" />
       </method>
     </configuration>
-    <configuration name="Newvbie'sKitchen" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/Newbie'sKitchen/index.html" useBuiltInWebServerPort="true">
+    <configuration name="Register.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/HkingAuditore.github.io/pages/Register.html" useBuiltInWebServerPort="true">
       <method v="2">
         <option name="LaunchBrowser.Before.Run" url="http://localhost:63343/Newbie'sKitchen/index.html" />
       </method>
@@ -86,12 +111,12 @@
       <item itemvalue="Attach to Node.js/Chrome.Newbie'sKitchen" />
       <item itemvalue="JavaScript Debug.Newvbie'sKitchen" />
       <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="JavaScript Debug.AboutUs.html" />
+      <item itemvalue="JavaScript Debug.Register.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Register.html" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.AboutUs.html" />
       </list>
     </recent_temporary>
   </component>
@@ -115,6 +140,7 @@
       <workItem from="1574637642274" duration="142000" />
       <workItem from="1574772544484" duration="4380000" />
       <workItem from="1574838417115" duration="1572000" />
+      <workItem from="1574925707311" duration="5479000" />
     </task>
     <servers />
   </component>
@@ -133,6 +159,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Newbie_sKitchen$Newvbie_sKitchen.dat" NAME="Newvbie'sKitchen Coverage Results" MODIFIED="1574166762824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
