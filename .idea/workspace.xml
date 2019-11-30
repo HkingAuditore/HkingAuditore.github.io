@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="509bd23f-25bc-4319-9094-26339abcfbd9" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/img/Register/kit1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Register/kit1@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Register/组 6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Register/组 6@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/index/1449.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/index/1625.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/index/smoke.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/index/小镇.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/index/组 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/index/组 3@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/index/组 5@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/Register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/ASP/registerManager.asp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1449.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1625.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/小镇.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/组 3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/组 3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/资源 2@4x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/资源 2@4x@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/AboutUs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/audioPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/audioPlayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +44,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Attach to Node.js/Chrome.Unnamed">
     <configuration name="Newbie'sKitchen" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="63342">
       <method v="2" />
     </configuration>
@@ -141,6 +121,7 @@
       <workItem from="1574772544484" duration="4380000" />
       <workItem from="1574838417115" duration="1572000" />
       <workItem from="1574925707311" duration="5479000" />
+      <workItem from="1575078524512" duration="439000" />
     </task>
     <servers />
   </component>

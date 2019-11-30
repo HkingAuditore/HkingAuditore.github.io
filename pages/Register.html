@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh">
 
 <head>
@@ -88,7 +88,7 @@
                     <div class=" container-fluid" style="width: 230%;">
                         <div class=" row" style="background-color: rgb(255, 253, 246); padding: 8% 20% 10% 20%;border-radius: 40px;box-shadow: 2px 2px 20px 5px rgba(88, 61, 38, 0.432);">
                             <div class=" col-12">
-                                <form class="needs-validation" action="" id="form-register" method="post" novalidate>
+                                <form class="needs-validation" action="../plugin/upload/html5/upload.asp" id="form-register" method="post" name="registerForm" enctype="multipart/form-data" novalidate>
                                     <div class=" row">
                                         <div class=" col-sm-12">
                                             <p class=" my-title" style="color: rgb(218, 98, 61);padding-bottom: 5%;font-size: 4.2vw;text-align: center;">
@@ -110,7 +110,7 @@
                                         <div class=" col-sm-6">
                                             <div class="form-group">
                                                 <label for="email">邮箱:</label>
-                                                <input type="email" class="form-control" id="email" placeholder="您的邮箱" style="width: 100%;" required/>
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="您的邮箱" style="width: 100%;" required/>
                                                 <div class="invalid-feedback">邮箱不可用！</div>
                                                 <div class="valid-feedback">邮箱可用！</div>
                                             </div>
@@ -119,9 +119,10 @@
 
                                     <div class="row">
                                         <div class=" col-sm-6">
+
                                             <p>上传头像：</p>
                                             <div class="custom-file" style="margin-bottom: 5%;">
-                                                <input type="file" class="custom-file-input" id="avatar_img" onchange="preview(this)" accept="image/*" required/>
+                                                <input type="file" class="custom-file-input" id="avatar_img" onchange="preview(this)" accept="image/*" name="file1" multiple="multiple" required/>
                                                 <label class="custom-file-label" for="avatar_img" style="color: rgb(221, 221, 221);" data-browse="浏览...">选择头像</label>
                                                 <div class="invalid-feedback">文件不可用！</div>
                                                 <div class="valid-feedback">文件可用！</div>
@@ -131,6 +132,7 @@
                                             <img src="../img/Register/组 7.png" id="avatar_preview" style="width: 10vw;height: 10vw; left:0;top: 0;border-radius: 50%;" />
                                         </div>
                                     </div>
+
                                     <div class="form-row">
                                         <div class=" col-sm-1" style="text-align: left;">
                                             <p>性别：</p>
@@ -163,10 +165,62 @@
                                     </div>
 
                                     <div class="form-row">
+                                        <div class=" col-lg-2">
+                                            您的偏好平台：
+                                        </div>
+                                        <div class=" col-lg-2">
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="favor1" name="favor[]" value="steam">
+                                                    <label class="custom-control-label" for="favor1">PC(Steam)</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="favor2" name="favor[]" value="epic">
+                                                    <label class="custom-control-label" for="favor2">PC(EPIC)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-lg-2">
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="favor3" name="favor[]" value="ps4">
+                                                    <label class="custom-control-label" for="favor3">PS4</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="favor4" name="favor[]" value="xbox">
+                                                    <label class="custom-control-label" for="favor4">XBOX</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-lg-2">
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="favor5" name="favor[]" value="ns">
+                                                    <label class="custom-control-label" for="favor5">Nintendo Switch</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="favor6" name="favor[]" value="android">
+                                                    <label class="custom-control-label" for="favor6">Android</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-lg-2">
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="favor7" name="favor[]" value="ios">
+                                                    <label class="custom-control-label" for="favor7">iOS</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-row">
                                         <div class=" col-sm-12">
                                             <div class="form-group">
                                                 <label for="pwd">密码:</label>
-                                                <input type="password" class="form-control" id="pwd" placeholder="请输入密码" required>
+                                                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="请输入密码" required>
                                                 <div class="valid-feedback">密码可用！</div>
                                                 <div class="invalid-feedback">密码不可用！</div>
                                             </div>
@@ -184,6 +238,37 @@
                                         </div>
                                     </div>
 
+                                    <div class="form-row">
+                                        <div class=" col-sm-12">
+                                            <div class="form-group">
+                                                <p>购买版本：</p>
+                                                <label class="mr-sm-2 sr-only" for="edition">购买版本</label>
+                                                <select class="custom-select" name="edition" required>
+                                                    <option selected disabled value="">选择你购买的版本...</option>
+                                                    <option value="standard">标准版</option>
+                                                    <option value="deluxe">豪华版</option>
+                                                    <option value="gold">黄金版</option>
+                                                </select>
+                                                <div class="invalid-feedback">请选择一个版本！</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class=" col-sm-12">
+                                            <div class="form-group">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" name="enableEmail" class="custom-control-input" id="enableAD" value="enable">
+                                                    <label class="custom-control-label" for="enableAD">允许我们给您发送邮件</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
                                     <div class="form-row" style="padding-top: 5%;">
                                         <div class=" col-md-3 offset-md-3" style="text-align: left;">
                                             <button class="btn custom-confirm-btn" type="submit" name="submit">确认</button>
@@ -192,6 +277,11 @@
                                             <button class="btn custom-reset-btn" type="reset" name="reset">重置</button>
                                         </div>
                                     </div>
+
+
+
+
+
                                 </form>
                             </div>
                         </div>
