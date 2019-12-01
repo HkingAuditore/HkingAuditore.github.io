@@ -73,7 +73,8 @@
 			call WriteToTextFile(savepath &"/" & "userconfig.txt",savepath,configStr,"GB2312")
 			set file = upload.Files("file1")
 			if file.isfile then
-				result = file.saveToFile(savepath,0,true)
+				file.usersetname = "Header"
+				result = file.saveToFile(savepath,-1,true)
 				if result then
 					imgPath = file.filename
 
