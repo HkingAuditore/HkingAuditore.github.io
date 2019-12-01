@@ -28,36 +28,43 @@
 
     <script src="../scripts/registerManager.js"></script>
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+
+            // Get all form-groups in need of validation
+            var validateGroup = document.getElementsByClassName('validate-me');
+
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
+                    //Added validation class to all form-groups in need of validation
+                    for (var i = 0; i < validateGroup.length; i++) {
+                        validateGroup[i].classList.add('was-validated');
+                    }
+                }, false);
+            });
+        }, false);
     </script>
 </head>
 
 <header>
-    <img src="../img/Register/kit1.png" width="100%" style="position: absolute;z-index: -1;margin: 0 auto;justify-content: center;" />
+    <img src="../img/Register/kit1.png" width="100%" style="position: absolute;z-index: -1;margin: 0 auto;justify-content: center; " />
 
-    <img src="../img/logo.png" style="position:absolute; margin-left: 0.8%; margin-top: 1%;" width="100px" />
+    <a href="../index.html">
+        <img src="../img/logo.png" style="position:absolute; margin-left: 0.8%; margin-top: 1%;" width="100px" />
+    </a>
 
     <div align="right" class="mainBar" style="float: right;right: 0;width: 1300px;margin-top: 1vw;margin-right: 1vw;">
-        <a href="" style="text-decoration: none;">关于我们</a>
-        <a href="" style="text-decoration: none;">线上预览</a>
-        <a href="" style="text-decoration: none;">预购/捐赠</a>
-        <a href="" style="text-decoration: none;">开发日志</a>
+        <a class=" toolbar" href="" style="text-decoration: none;">关于我们</a>
+        <a class=" toolbar" href="" style="text-decoration: none;">线上预览</a>
+        <a class=" toolbar" href="" style="text-decoration: none;">预购/捐赠</a>
+        <a class=" toolbar" href="" style="text-decoration: none;">开发日志</a>
         <div class="player" style="float:right;margin-right: 3%;margin-top: -0.1%;">
             <div class="play" id="player" onclick="Player()">
                 <audio id="BGM" loop="" preload="">
@@ -88,7 +95,7 @@
                     <div class=" container-fluid" style="width: 230%;">
                         <div class=" row" style="background-color: rgb(255, 253, 246); padding: 8% 20% 10% 20%;border-radius: 40px;box-shadow: 2px 2px 20px 5px rgba(88, 61, 38, 0.432);">
                             <div class=" col-12">
-                                <form class="needs-validation" action="ASP/registerManager.asp" id="form-register" method="post" name="registerForm" novalidate>
+                                <form class="needs-validation" action="ASP/loginManager.asp" id="form-register" method="post" name="registerForm" novalidate>
                                     <div class=" row">
                                         <div class=" col-sm-12">
                                             <p class=" my-title" style="color: rgb(218, 98, 61);padding-bottom: 5%;font-size: 4.2vw;text-align: left;">
@@ -99,36 +106,76 @@
                                     <div class="form-row">
 
                                         <div class=" col-sm-6">
-                                            <div class="form-group">
-                                                <label class="" for="userName">用户名:</label>
-                                                <input type="text" class="form-control" name="userName" id="userName" placeholder="您的用户名" style="width: 100%;" required/>
-                                                <div class="invalid-feedback" id="userNameFeedBack">用户名不可为空！</div>
+                                            <div class="form-group validate-me">
+                                                <label class="" for="account">账户:</label>
+                                                <input type="text" class="form-control" name="account" id="account" placeholder="您的用户名" style="width: 100%;" onblur="checkAccount(this)" required/>
+                                                <div class="invalid-tooltip" id="invalid-tooltip" style="margin-top:-2%;right: 0; ">账户不可为空！</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class=" col-sm-6">
-                                            <div class="form-group">
+                                            <div class="form-group validate-me" id="pwdForm">
                                                 <label for="pwd">密码:</label>
-                                                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="您的密码" style="width: 100%;" required/>
-                                                <div class="invalid-feedback">密码不可为空！</div>
+                                                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="您的密码" style="width: 100%;" oninput="checkPwd(this)" required/>
+                                                <div class="invalid-tooltip" style="margin-top:-2%;right: 0; ">密码不可为空！</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-row" style="padding-top: 5%;">
-                                        <div class=" col-sm-4 col-md-3" style="text-align: left;">
+                                    <div class="row" style="padding-top: 5%;">
+                                        <div class=" col-sm-4 col-md-3" style="text-align: left; padding-bottom: 5%;">
                                             <button class="btn custom-confirm-btn" type="submit" name="submit">确认</button>
                                         </div>
-                                    </div>
+                                        <div class=" col-sm-4 col-md-3" style="text-align: left;">
+                                            <div class="btn custom-switch-btn" onclick="javascrtpt:window.location.href='../pages/Register.html'">没有账号？注册</div>
+                                        </div>
 
                                 </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <script>
+            function checkAccount(input) {
+                // alert("!");
+                var acc = input.value;
+                var reg = /^[\u4e00-\u9fa5]{0,}$/;
+                var fileUrl = "../users/" + acc + "/userconfig.txt";
+                // alert(fileUrl);
+                if (reg.test(acc)) {
+                    input.setCustomValidity("账户不可用！");
+                } else {
+                    var fso = new XMLHttpRequest();
+                    fso.open("GET", fileUrl, false);
+                    fso.send();
+                    if (fso.readyState == 4) {
+                        if (fso.status == 200) {
+                            input.setCustomValidity('');
+                        } //url存在  
+                        else if (fso.status == 404) {
+                            input.setCustomValidity("账户不存在！");
+                            document.getElementById("invalid-tooltip").innerHTML = "账户不存在！";
+                        } else {
+                            input.setCustomValidity("未知错误！");
+                            document.getElementById("invalid-tooltip").innerHTML = "未知错误！";
+                        }; //其他状态  
+                    }
+                }
+            }
+
+            function checkPwd(input) {
+                if (input.value != "") {
+                    document.getElementById("pwdForm").classList.remove("validate-me");
+                    document.getElementById("pwdForm").classList.remove("was-validated");
+                } else {
+                    document.getElementById("pwdForm").classList.add("validate-me");
+                    document.getElementById("pwdForm").classList.add("was-validated");
+                }
+            }
+        </script>
 </body>
 
 </html>

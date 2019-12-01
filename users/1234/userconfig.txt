@@ -1,0 +1,1 @@
+account=1234|username=HkingAuditore|email=HkingAuditore@Gmail.com|gender=male|classname=信管1801|favor[]=steam,epic,ps4,xbox|pwd=123|edition=standard|submit=|

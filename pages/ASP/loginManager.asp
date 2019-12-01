@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-<!--#include file="UpLoad_Class.asp"-->
  <meta charset="utf-8" />
 
 <html lang="zh">
@@ -35,71 +34,9 @@
 			next
 			UTF2GB=GBStr
 			end function
-		dim upload
-		dim configStr
-		' configStr ="CONFIG:"& chr(10)
-		set upload = new AnUpLoad
-		upload.Exe = "*"
-		upload.MaxSize = 2 * 1024 * 1024 '2M
-		upload.GetData()
-		Sub WriteToTextFile (FileUrl,foldUrl,byval Str,CharSet)
-				set stm=server.CreateObject("adodb.stream")
-				set fso = server.CreateObject("scripting.filesystemobject")
-				if Not fso.FolderExists(server.MapPath(foldUrl)) Then
-					fso.createfolder(server.MapPath(foldUrl))
-				end if 
-				stm.Type=2 '以本模式读取
-				stm.mode=3
-				stm.charset=CharSet
-				stm.open
-					stm.WriteText str
-				stm.SaveToFile server.MapPath(FileUrl),2
-				
-				stm.flush
-				stm.Close
-				set stm=nothing
-		End Sub
-		if upload.ErrorID>0 then 
-			
-			response.Write upload.Description
-		else
-			dim file,savpath,uname,imgPath
-			uname=upload.Forms("account")
-			savepath = "../../../users/"& uname
-			for each frm in upload.forms("-1")
-				configStr = configStr&frm &"="& upload.forms(frm) & "|"
-				' response.Write frm & "=" & upload.forms(frm) & "<br />"
-			next
-			call WriteToTextFile(savepath &"/" & "userconfig.txt",savepath,configStr,"GB2312")
-			set file = upload.Files("file1")
-			if file.isfile then
-				file.usersetname = "Header"
-				result = file.saveToFile(savepath,-1,true)
-				if result then
-					imgPath = file.filename
-
-					' response.Write "文件'" & file.LocalName & "'上传成功，保存位置'" & server.MapPath(savepath & "/" & file.filename) & "',文件大小" & file.size & "字节<br />"
-				else
-					' response.Write file.Exception & "<br />"
-				end if
-			end if
-			
-			set file = upload.Files_Muti("file1",1)
-			if file.isfile then
-				result = file.saveToFile(savepath,1,true)
-				if result then
-					imgPath = file.filename
-					' response.Write "文件'" & file.LocalName & "'上传成功，保存位置'" & server.MapPath(savepath & "/" & file.filename) & "',文件大小" & file.size & "字节<br />"
-				else
-					response.Write file.Exception & "<br />"
-				end if
-			end if
-			
-			' Response.Write "成功保存的文件个数：" & Upload.QuickSave("file1",savepath) & "个"
-		end if
-		set upload = nothing
-		dim config
-		config = ReadFromTextFile(savepath &"/" & "userconfig.txt","utf-8")
+		dim config,account
+        account = Request.form("account")
+		config = ReadFromTextFile("../../users/"&account&"/userconfig.txt","utf-8")
 	%>
 <head>
     <meta charset="UTF-8" />
@@ -149,9 +86,11 @@
 </head>
 
 <header>
-    <img src="../../../img/Register/kit1.png" width="100%" style="position: absolute;z-index: -1;margin: 0 auto;justify-content: center;" οnclick="javascrtpt:window.location.href='../../index.html'" />
+    <img src="../../../img/Register/kit1.png" width="100%" style="position: absolute;z-index: -1;margin: 0 auto;justify-content: center;" />
 
-    <img src="../../../img/logo.png" style="position:absolute; margin-left: 0.8%; margin-top: 1%;" width="100px" />
+    <a href="../../index.html">
+        <img src="../../img/logo.png" style="position:absolute; margin-left: 0.8%; margin-top: 1%;" width="100px" />
+    </a>
 
     <div align="right" class="mainBar" style="float: right;right: 0;width: 1300px;margin-top: 1vw;margin-right: 1vw;">
         <a href="" style="text-decoration: none;">关于我们</a>
@@ -189,11 +128,7 @@
                         <div class=" row" style="background-color: rgb(255, 253, 246); padding: 8% 20% 10% 20%;border-radius: 40px;box-shadow: 2px 2px 20px 5px rgba(88, 61, 38, 0.432);">
                             <div class=" col-12">
                                 <%
-								' response.write ("用户名："& uname)
-								dim pat
-								pat = "../../../users/" & uname &"/userconfig.txt"
-								' response.write ("路径："& pat &"<br/>")
-								' response.write ("内容：<br/>"& config &"<br/>")	
+
 								config = split(config,"|")
 								dim username,email,gender,classname,favor,pwd,edition,enableemail
 								username = config(1)
@@ -213,23 +148,21 @@
 								enableemail = config(8)
 								enableemail = split(enableemail,"=")
 
-								
-								response.write ("您的用户名是："&username(1)&"<br/>")
-								response.write ("您的邮箱是："&email(1)&"<br/>")
-								response.write ("您的头像是：<br/><img src='../../../users/" & uname & "/header.jpg'/><br/>")
-								response.write ("您的性别是："&gender(1)&"<br/>")
-								response.write ("您的班级是："&classname(1)&"<br/>")
-								response.write ("您的偏好是："&favor(1)&"<br/>")
-								response.write ("您的密码是："&pwd(1)&"<br/>")
-								response.write ("您的版本是："&edition(1)&"<br/>")
-								response.write ("您"&enableemail(1)&"了发送邮件<br/>")
-								
-
+								if Request.form("pwd")=pwd(1) then
+                                    response.write ("您的用户名是："&username(1)&"<br/>")
+                                    response.write ("您的邮箱是："&email(1)&"<br/>")
+                                    response.write ("您的头像是：<br/><img src='../../users/" & account & "/header.jpg'/><br/>")
+                                    response.write ("您的性别是："&gender(1)&"<br/>")
+                                    response.write ("您的班级是："&classname(1)&"<br/>")
+                                    response.write ("您的偏好是："&favor(1)&"<br/>")
+                                    response.write ("您的密码是："&pwd(1)&"<br/>")
+                                    response.write ("您的版本是："&edition(1)&"<br/>")
+                                    response.write ("您"&enableemail(1)&"了发送邮件<br/>")
+                                else
+                                    response.write("密码错误！<br/>")
+                                end if
 
 								%>
-								<div class=" col-md-3 offset-md-3" style="text-align: left;">
-                                    <button class="btn custom-confirm-btn" type="submit" name="submit" onclick="javascrtpt:window.location.href='../../../pages/login.html'"  >现在登录</button>
-                                </div>
                             </div>
                         </div>
                     </div>

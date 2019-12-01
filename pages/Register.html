@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Newbie's Kitchen</title>
     <link href="../img/icon.ico" rel="icon" type="/image/x-ico" />
-
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.css" rel="stylesheet">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
@@ -18,7 +17,6 @@
     <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/language/zh_CN.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
     <link rel="stylesheet" href="../css/registerCSS.css">
-
     <script src="../scripts/audioPlayer.js"></script>
     <script>
         $(document).ready(function() {
@@ -49,9 +47,11 @@
 </head>
 
 <header>
-    <img src="../img/Register/kit1.png" width="100%" style="position: absolute;z-index: -1;margin: 0 auto;justify-content: center;" />
+    <img src="../img/Register/kit1.png" width="100%" style="position: absolute;z-index: -1;margin: 0 auto;justify-content: center;" οnclick="javascrtpt:window.location.href='../../index.html'" />
 
-    <img src="../img/logo.png" style="position:absolute; margin-left: 0.8%; margin-top: 1%;" width="100px" />
+    <a href="../index.html">
+        <img src="../img/logo.png" style="position:absolute; margin-left: 0.8%; margin-top: 1%;" width="100px" />
+    </a>
 
     <div align="right" class="mainBar" style="float: right;right: 0;width: 1300px;margin-top: 1vw;margin-right: 1vw;">
         <a href="" style="text-decoration: none;">关于我们</a>
@@ -70,18 +70,12 @@
 </header>
 
 <body>
-
     <div class="container-fluid" style="top: 15vw;position: absolute;background-color: cornflowerblue;">
         <div class="row" style="background-color: blue; margin-right: 0;">
             <div class=" col-2 offset-4">
                 <img src="../img/Register/组 1.png" width="200%" style="position: absolute;left: 0%;z-index: 5; margin-top: 10%;" />
             </div>
-
-
         </div>
-
-
-
         <div class="container-fluid " style="position: absolute; top:12vw; padding-left: 30%; padding-right: 30%; left: 0;background-color: rgb(240, 196, 140);border-radius: 50px;padding-top: 5%;">
             <div class=" row" style="width: 100%; margin-left: -62%;margin-top: -10%;">
                 <div class=" col-12">
@@ -96,13 +90,18 @@
                                             </p>
                                         </div>
                                     </div>
+                                    <div class=" row">
+                                        <div class=" col-sm-8 col-md-6 col-lg-4 col-12 offset-md-5 offset-lg-9 offset-sm-5 offset-md-6" style="text-align: left; padding-bottom: 5%;">
+                                            <div class="btn custom-switch-btn" onclick="javascrtpt:window.location.href='../pages/login.html'">已有账号？登录</div>
+                                        </div>
+                                    </div>
                                     <div class="form-row">
 
                                         <div class=" col-sm-12">
                                             <div class="form-group">
                                                 <label class="" for="account">账号（不支持中文及特殊符号）:</label>
                                                 <input type="text" class="form-control" name="account" id="account" oninput="checkAccount(this)" placeholder="您的账号" style="width: 100%;" required/>
-                                                <div class="invalid-feedback" id="userNameFeedBack">账号不可用！</div>
+                                                <div class="invalid-feedback" id="accountFeedBack">账号不可用！</div>
                                                 <div class="valid-feedback">账号可用！</div>
                                             </div>
                                         </div>
@@ -330,11 +329,26 @@
         function checkAccount(input) {
             var acc = input.value;
             var reg = /^[\u4e00-\u9fa5]{0,}$/;
+            var fileUrl = "../users/" + acc + "/userconfig.txt";
+            // alert(fileUrl);
             if (reg.test(acc)) {
                 input.setCustomValidity("账户不可用！");
             } else {
-                input.setCustomValidity('');
-
+                var fso = new XMLHttpRequest();
+                fso.open("GET", fileUrl, false);
+                fso.send();
+                if (fso.readyState == 4) {
+                    if (fso.status == 200) {
+                        input.setCustomValidity("账户已存在！");
+                        document.getElementById("accountFeedBack").innerHTML = "账户已存在！";
+                    } //url存在  
+                    else if (fso.status == 404) {
+                        input.setCustomValidity('');
+                    } else {
+                        input.setCustomValidity("未知错误！");
+                        document.getElementById("accountFeedBack").innerHTML = "未知错误！";
+                    }; //其他状态  
+                }
             }
         }
 
