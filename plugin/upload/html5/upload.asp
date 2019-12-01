@@ -216,7 +216,7 @@
 								
 								response.write ("您的用户名是："&username(1)&"<br/>")
 								response.write ("您的邮箱是："&email(1)&"<br/>")
-								response.write ("您的头像是：<br/><img src='../../../users/" & uname & "/" & imgPath&"'/><br/>")
+								response.write ("您的头像是：<br/><img src='../../../users/" & uname & "/header.jpg'/><br/>")
 								response.write ("您的性别是："&gender(1)&"<br/>")
 								response.write ("您的班级是："&classname(1)&"<br/>")
 								response.write ("您的偏好是："&favor(1)&"<br/>")

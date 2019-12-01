@@ -134,9 +134,9 @@
 
                                             <p>上传头像：</p>
                                             <div class="custom-file" style="margin-bottom: 5%;">
-                                                <input type="file" class="custom-file-input" id="avatar_img" onchange="preview(this)" accept="image/*" name="file1" multiple="multiple" required/>
+                                                <input type="file" class="custom-file-input" id="avatar_img" onchange="preview(this)" oninput="checkImg(this)" accept="image/jpeg" name="file1" multiple="multiple" required/>
                                                 <label class="custom-file-label" for="avatar_img" style="color: rgb(221, 221, 221);" data-browse="浏览...">选择头像</label>
-                                                <div class="invalid-feedback">文件不可用！</div>
+                                                <div class="invalid-feedback" id="AvatarFeedback">文件不可用！请选择一个jpg格式的图片！</div>
                                                 <div class="valid-feedback">文件可用！</div>
                                             </div>
                                         </div>
@@ -335,6 +335,21 @@
             } else {
                 input.setCustomValidity('');
 
+            }
+        }
+
+        function checkImg(input) {
+            // alert("!");
+            var fileType = input.value.substring(input.value.lastIndexOf("."), input.value.length);
+            var fileSize = input.files[0].size;
+            // alert(fileType);
+            if (fileType != ".jpg" && fileType != ".jpeg") {
+                input.setCustomValidity("请选择一个jpg文件！");
+            } else if (fileSize > 500000) {
+                input.setCustomValidity("文件过大！请选择一个500kb内的文件");
+                document.getElementById("AvatarFeedback").innerHTML = "文件过大！请选择一个500kb内的文件！";
+            } else {
+                input.setCustomValidity('');
             }
         }
     </script>

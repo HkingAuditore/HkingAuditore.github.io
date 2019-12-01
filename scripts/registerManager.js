@@ -7,6 +7,17 @@ function preview() {
     };
 };
 
+function checkImg(input) {
+    var fileType = input.substring(input.lastIndexOf("."), input.length);
+    alert(fileType);
+    if (fileType != "jpg" && fileType != "jpeg") {
+        input.setCustomValidity("请选择一个jpg文件！");
+    } else {
+        input.setCustomValidity('');
+
+    }
+};
+
 function check(input) {
     if (input.value == "HkingAuditore" ||
         input.value == "fine" ||
