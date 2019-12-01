@@ -98,6 +98,18 @@
                                     </div>
                                     <div class="form-row">
 
+                                        <div class=" col-sm-12">
+                                            <div class="form-group">
+                                                <label class="" for="account">账号（不支持中文及特殊符号）:</label>
+                                                <input type="text" class="form-control" name="account" id="account" oninput="checkAccount(this)" placeholder="您的账号" style="width: 100%;" required/>
+                                                <div class="invalid-feedback" id="userNameFeedBack">账号不可用！</div>
+                                                <div class="valid-feedback">账号可用！</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+
                                         <div class=" col-sm-6">
                                             <div class="form-group">
                                                 <label class="" for="userName">用户名:</label>
@@ -305,12 +317,21 @@
         }
 
         function checkClass(input) {
-            console.log("in!");
             var classNum = input.value.substring(input.value.length - 4);
-            console.log(classNum);
             var reg = /^[0-9]+$/;
             if (!reg.test(classNum)) {
                 input.setCustomValidity("这不是一个班级名称");
+            } else {
+                input.setCustomValidity('');
+
+            }
+        }
+
+        function checkAccount(input) {
+            var acc = input.value;
+            var reg = /^[\u4e00-\u9fa5]{0,}$/;
+            if (reg.test(acc)) {
+                input.setCustomValidity("账户不可用！");
             } else {
                 input.setCustomValidity('');
 

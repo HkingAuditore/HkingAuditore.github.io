@@ -9,7 +9,7 @@
 <form action="upload.asp" method="post" enctype="multipart/form-data">
  <p>
  	表单：<input type="text" name="form1" value="form1_text" /><br />
-    文件：<input type="file" id="file0" name="avatar" multiple="multiple" />
+    文件：<input type="file" id="file0" name="file1" multiple="multiple" />
 	<input type="submit" value="上传" />
     表单：<input type="text" name="form2" value="form2_text" /><br />
     </p>
