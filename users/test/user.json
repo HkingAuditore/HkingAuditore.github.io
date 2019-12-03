@@ -1,0 +1,18 @@
+{
+    "account": "test",
+    "username": "HkingAuditore",
+    "email": "HkingAuditore@Gmail.com",
+    "gender": "male",
+    "classname": "信管1801",
+    "favor[]": [
+        "steam",
+        "epic",
+        "ps4",
+        "xbox",
+        "ns",
+        "ios"
+    ],
+    "pwd": "12",
+    "edition": "deluxe",
+    "enableemail": "enable",
+}

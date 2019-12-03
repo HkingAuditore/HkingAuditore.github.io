@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newbie's Kitchen</title>
+    <link href="../img/icon.ico" rel="icon" type="/image/x-ico" />
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/language/zh_CN.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <link rel="stylesheet" href="../css/userInfoCSS.css">
+
+    <script src="../scripts/audioPlayer.js"></script>
+
+    <script>
+        var account = location.search.split("=")[1];
+        var target = "../users/" + account;
+        var userData;
+        $.ajaxSettings.async = false;
+        $.getJSON(target + "/user.json", function(result) {
+            userData = result;
+        });
+        $.ajaxSettings.async = true;
+    </script>
+</head>
+
+
+
+
+
+
+
+
+
+<header style="background-image:url(../img/userInfo/小镇.png) ; height: 100px;">
+    <!-- <img src="../img/userInfo/小镇.png" width="100%" style="position: absolute;z-index: -1;margin: 0 auto;justify-content: center; filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.445));;" /> -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light blurContainer" style="background-image:url(../img/userInfo/小镇.png) ;">
+        <a class="navbar-brand" href="../index.html#">
+            <img src="../img/logo.png" height="30" class="d-inline-block align-top" alt=""> <span class=" my-title" style="font-size: 1em;color:rgb(252, 99, 53) ;">菜鸟厨房</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+
+    <div class="container-fluid" style="top: 15vw;position: absolute;">
+        <div class="row" style="margin-right: 0; top: 500px;">
+            <hr>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

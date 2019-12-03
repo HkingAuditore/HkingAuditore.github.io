@@ -36,7 +36,7 @@
 			end function
 		dim config,account
         account = Request.form("account")
-		config = ReadFromTextFile("../../users/"&account&"/userconfig.txt","utf-8")
+		config = ReadFromTextFile("../../users/"&account&"/user.json","utf-8")
 	%>
 <head>
     <meta charset="UTF-8" />
@@ -126,43 +126,27 @@
                 <div class=" col-12">
                     <div class=" container-fluid" style="width: 230%;">
                         <div class=" row" style="background-color: rgb(255, 253, 246); padding: 8% 20% 10% 20%;border-radius: 40px;box-shadow: 2px 2px 20px 5px rgba(88, 61, 38, 0.432);">
-                            <div class=" col-12">
+                            <div class=" col-12" style="text-align:center;">
                                 <%
+								config = split(config,"""pwd"":")
+								dim pwdTemp
+								pwdTemp = split(config(1),"""")
+                                dim pwd
+                                pwd = pwdTemp(1)
+                                if Request.form("pwd")=pwd then
+                                %>
+                                    <h1>登录成功！稍后自动跳转到个人信息页面</h1>
+                                    <script>
+                                        var accountJS ="<% =account %>";
+                                        var target = "window.location='../userInfo.html?userName="+ accountJS+"'"; 
+                                        window.setTimeout(target,2000);
+                                    </script>
+                                <%ELSE%>
+                                    <h1>密码错误！稍后自动跳转回登录页面</h1>
+                                    <script>window.setTimeout("window.location='../login.html'",2000);</script>
+                                <%END IF%>
 
-								config = split(config,"|")
-								dim username,email,gender,classname,favor,pwd,edition,enableemail
-								username = config(1)
-								username  = split(username,"=")
-								email = config(2)
-								email = split(email,"=")
-								gender = config(3)
-								gender = split(gender,"=")
-								classname = config(4)
-								classname = split(classname,"=")
-								favor = config(5)
-								favor = split(favor,"=")
-								pwd = config(6)
-								pwd = split(pwd,"=")
-								edition = config(7)
-								edition = split(edition,"=")
-								enableemail = config(8)
-								enableemail = split(enableemail,"=")
-
-								if Request.form("pwd")=pwd(1) then
-                                    response.write ("您的用户名是："&username(1)&"<br/>")
-                                    response.write ("您的邮箱是："&email(1)&"<br/>")
-                                    response.write ("您的头像是：<br/><img src='../../users/" & account & "/header.jpg'/><br/>")
-                                    response.write ("您的性别是："&gender(1)&"<br/>")
-                                    response.write ("您的班级是："&classname(1)&"<br/>")
-                                    response.write ("您的偏好是："&favor(1)&"<br/>")
-                                    response.write ("您的密码是："&pwd(1)&"<br/>")
-                                    response.write ("您的版本是："&edition(1)&"<br/>")
-                                    response.write ("您"&enableemail(1)&"了发送邮件<br/>")
-                                else
-                                    response.write("密码错误！<br/>")
-                                end if
-
-								%>
+								
                             </div>
                         </div>
                     </div>

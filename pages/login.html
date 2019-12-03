@@ -143,7 +143,7 @@
                 // alert("!");
                 var acc = input.value;
                 var reg = /^[\u4e00-\u9fa5]{0,}$/;
-                var fileUrl = "../users/" + acc + "/userconfig.txt";
+                var fileUrl = "../users/" + acc + "/user.json";
                 // alert(fileUrl);
                 if (reg.test(acc)) {
                     input.setCustomValidity("账户不可用！");

@@ -82,7 +82,7 @@
                     <div class=" container-fluid" style="width: 230%;">
                         <div class=" row" style="background-color: rgb(255, 253, 246); padding: 8% 20% 10% 20%;border-radius: 40px;box-shadow: 2px 2px 20px 5px rgba(88, 61, 38, 0.432);">
                             <div class=" col-12">
-                                <form class="needs-validation" action="../plugin/upload/html5/upload.asp" id="form-register" method="post" name="registerForm" enctype="multipart/form-data" novalidate>
+                                <form class="needs-validation" action="ASP/registerManager.asp" id="form-register" method="post" name="registerForm" enctype="multipart/form-data" novalidate>
                                     <div class=" row">
                                         <div class=" col-sm-12">
                                             <p class=" my-title" style="color: rgb(218, 98, 61);padding-bottom: 5%;font-size: 4.2vw;text-align: center;">
@@ -282,10 +282,10 @@
 
                                     <div class="form-row" style="padding-top: 5%;">
                                         <div class=" col-md-3 offset-md-3" style="text-align: left;">
-                                            <button class="btn custom-confirm-btn" type="submit" name="submit">确认</button>
+                                            <button class="btn custom-confirm-btn" type="submit">确认</button>
                                         </div>
                                         <div class=" col-md-3" style="text-align: left;">
-                                            <button class="btn custom-reset-btn" type="reset" name="reset">重置</button>
+                                            <button class="btn custom-reset-btn" type="reset">重置</button>
                                         </div>
                                     </div>
 
@@ -329,7 +329,7 @@
         function checkAccount(input) {
             var acc = input.value;
             var reg = /^[\u4e00-\u9fa5]{0,}$/;
-            var fileUrl = "../users/" + acc + "/userconfig.txt";
+            var fileUrl = "../users/" + acc + "/user.json";
             // alert(fileUrl);
             if (reg.test(acc)) {
                 input.setCustomValidity("账户不可用！");
@@ -356,8 +356,9 @@
             // alert("!");
             var fileType = input.value.substring(input.value.lastIndexOf("."), input.value.length);
             var fileSize = input.files[0].size;
+
             // alert(fileType);
-            if (fileType != ".jpg" && fileType != ".jpeg") {
+            if (fileType.toLowerCase() != ".jpg" && fileType.toLowerCase() != ".jpeg") {
                 input.setCustomValidity("请选择一个jpg文件！");
             } else if (fileSize > 500000) {
                 input.setCustomValidity("文件过大！请选择一个500kb内的文件");
