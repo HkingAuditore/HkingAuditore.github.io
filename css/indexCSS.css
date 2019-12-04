@@ -12,15 +12,15 @@
             margin-top: -0.5%;
         }
         
-        header,
-        .container-fluid::before {
+        body,
+        .container::before {
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
             position: relative;
         }
         
-        .container-fluid {
+        .blurContainer {
             margin-left: auto;
             margin-right: auto;
             width: 2000px;
@@ -42,7 +42,7 @@
             overflow: hidden;
         }
         
-        .container-fluid::before {
+        .blurContainer::before {
             width: 110%;
             height: 110%;
             content: '';
@@ -55,7 +55,7 @@
             filter: blur(10px);
         }
         
-        .container-fluid::after {
+        .blurContainer::after {
             color: black;
             content: "";
             position: absolute;

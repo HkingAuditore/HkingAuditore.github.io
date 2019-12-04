@@ -269,25 +269,46 @@
     }
     
     header,
-    .container::before {}
+    .container::before {
+        background-repeat: no-repeat;
+    }
     
     .blurContainer {
+        background: url("../img/userInfo/小镇blur2.png");
         position: relative;
         /*    background-color: rgba(255,255,255,.1);*/
         border: 1px solid rgba(0, 0, 0, .1);
         /*    border-radius:50px ;*/
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
-        overflow: hidden;
+        /* filter: blur(4px); */
+        box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, .3);
+        /* overflow: hidden; */
     }
     
     .blurContainer::before {
         content: '';
-        width: 100%;
-        filter: blur(4px);
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         z-index: -1;
+        -webkit-filter: blur(20px) !important;
+        filter: blur(20px);
     }
+    
+    .nav-link {
+        /* color: #ffffff !important; */
+        /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.185); */
+        transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    .nav-item:hover {
+        /* font-size: 120%; */
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.308);
+    }
+    
+    .dropdown-item {
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+    }
+    
+    .dropdown-menu {}

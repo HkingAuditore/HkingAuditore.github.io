@@ -41,13 +41,13 @@
 
 
 
-<header style="background-image:url(../img/userInfo/小镇.png) ; height: 100px;">
+<header style="background-image:url(../img/userInfo/小镇.png) ; height: 200px;">
     <!-- <img src="../img/userInfo/小镇.png" width="100%" style="position: absolute;z-index: -1;margin: 0 auto;justify-content: center; filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.445));;" /> -->
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light blurContainer" style="background-image:url(../img/userInfo/小镇.png) ;">
+    <nav class=" navbar navbar-expand-lg navbar-light blurContainer">
         <a class="navbar-brand" href="../index.html#">
-            <img src="../img/logo.png" height="30" class="d-inline-block align-top" alt=""> <span class=" my-title" style="font-size: 1em;color:rgb(252, 99, 53) ;">菜鸟厨房</span>
+            <img src="../img/logo.png" height="30" class="d-inline-block align-top" alt="" style="filter: brightness(0)">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,15 +55,15 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">主页</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">个人面板<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown
+                      开发日志
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
@@ -71,9 +71,6 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
         </div>
@@ -83,11 +80,20 @@
 
 <body>
 
-    <div class="container-fluid" style="top: 15vw;position: absolute;">
-        <div class="row" style="margin-right: 0; top: 500px;">
-            <hr>
-
-
+    <div class="container-fluid">
+        <div class="row" style="margin-right: 0;padding-top: 5%;">
+            <div class=" col-lg-3  col-xl-2 col-md-3 offset-lg-3 offset-md-2 offset-xl-3" style="text-align: center;">
+                <p>用户名：<span id="userName">用户名在这里显示</span></p>
+                <script>
+                    document.getElementById("userName").innerHTML = userData.username;
+                </script>
+            </div>
+            <div class=" col-lg-4  col-xl-5 col-md-6" style="text-align: center;" align="left">
+                <img id="userAvatar" src="" style="width: 50%;">
+                <script>
+                    document.getElementById("userAvatar").src = "../users/" + userData.account + "/header.jpg";
+                </script>
+            </div>
         </div>
 
 
