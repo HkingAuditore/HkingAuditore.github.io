@@ -8,5 +8,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/jquery" level="application" />
+    <orderEntry type="library" name="@types/bootstrap" level="application" />
+    <orderEntry type="library" name="@types/jquery-ajax-chain" level="application" />
+    <orderEntry type="library" name="@types/html5plus" level="application" />
+    <orderEntry type="library" name="@types/js-base64" level="application" />
+    <orderEntry type="library" name="@types/js-cookie" level="application" />
+    <orderEntry type="library" name="jquery-cookie" level="project" />
+    <orderEntry type="library" name="@types/cookie" level="application" />
   </component>
 </module>

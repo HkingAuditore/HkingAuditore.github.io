@@ -1,7 +1,7 @@
 function Player() {
     var player = document.getElementById("player");
     var music = document.getElementById("BGM");
-    if (player.className == "play") {
+    if (player.className === "play") {
         player.setAttribute("class", "stop");
         music.play();
         // alert("play!");

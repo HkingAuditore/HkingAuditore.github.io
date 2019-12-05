@@ -303,6 +303,7 @@
     }
     
     .nav-item:hover {
+        background-color: rgba(85, 85, 85, 0.11);
         /* font-size: 120%; */
         text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.308);
     }
@@ -312,3 +313,25 @@
     }
     
     .dropdown-menu {}
+
+    .info-card{
+
+        margin-top: -8%;
+        padding-top: 6%;
+        padding-bottom: 10%;
+        margin-bottom: 5%;
+        height: 100%;
+        width: 80%;
+
+        border-radius: 35px;
+        box-shadow: 2px 2px 28px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .account{
+        /*font-size: 1.5em;*/
+        color: #b9bab7;
+    }
+    .userName{
+        font-size: 2.4em;
+    }
+

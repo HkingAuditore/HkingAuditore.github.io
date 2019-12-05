@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jquery-cookie" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery" />
+    </properties>
+    <CLASSES />
+    <DOCUMENTATION>
+      <root url="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js" />
+    </DOCUMENTATION>
+    <SOURCES />
+  </library>
+</component>

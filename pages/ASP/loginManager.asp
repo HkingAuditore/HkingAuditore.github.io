@@ -54,6 +54,7 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/language/zh_CN.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script src="../../scripts/jquery.cookie.js"></script>
     <link rel="stylesheet" href="../../../css/registerCSS.css">
 
     <script src="../../../scripts/audioPlayer.js"></script>
@@ -138,7 +139,9 @@
                                     <h1>登录成功！稍后自动跳转到个人信息页面</h1>
                                     <script>
                                         var accountJS ="<% =account %>";
-                                        var target = "window.location='../userInfo.html?userName="+ accountJS+"'"; 
+                                        $.cookie('account', accountJS,{expires: 7, path: '/', secure: false });
+                                        // alert($.cookie('account'));
+                                        var target = "window.location='../userInfo.html'";
                                         window.setTimeout(target,2000);
                                     </script>
                                 <%ELSE%>
