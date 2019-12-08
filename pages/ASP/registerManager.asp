@@ -91,6 +91,12 @@
 			set file = upload.Files("file1")
 			if file.isfile then
 				file.usersetname = "Header"
+				file.Extend = "jpg"
+				dim fileUploadName
+				fileUploadName = upload.forms("file1")
+
+				
+
 				result = file.saveToFile(savepath,-1,true)
 				if result then
 					imgPath = file.filename
@@ -208,6 +214,7 @@
                                 <div class=" col-12" style="text-align:center;">
                                     <%
                                  		response.write("<h1 style=""padding-bottom:10%"">注册成功!</h1>")
+										
 									%>
                                         <div class=" col-md-6 col-lg-6 col-xl-6 offset-md-3 offset-lg-3 offset-xl-3" style="text-align: left;">
                                             <button class="btn custom-confirm-btn" type="submit" name="submit" onclick="javascrtpt:window.location.href='../../../pages/login.html'">现在登录</button>

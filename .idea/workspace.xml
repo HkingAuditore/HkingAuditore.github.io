@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="509bd23f-25bc-4319-9094-26339abcfbd9" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jquery_cookie.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/cookieProcess.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/jquery.cookie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Newbie'sKitchen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Newbie'sKitchen.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/userInfoCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/userInfoCSS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ASP/loginManager.asp" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ASP/loginManager.asp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/ASP/registerManager.asp" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ASP/registerManager.asp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/userInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/audioPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/audioPlayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/HkingAuditore/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/users/HkingAuditore/user.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +70,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="liveEdit" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.userInfo.html">
     <configuration name="Newbie'sKitchen" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="63342">
@@ -169,6 +159,10 @@
       <workItem from="1575541744252" duration="45000" />
       <workItem from="1575541984329" duration="136000" />
       <workItem from="1575542191708" duration="13410000" />
+      <workItem from="1575604280450" duration="79000" />
+      <workItem from="1575627102464" duration="691000" />
+      <workItem from="1575642742366" duration="2672000" />
+      <workItem from="1575769931633" duration="335000" />
     </task>
     <servers />
   </component>
@@ -208,43 +202,43 @@
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
     <state x="2800" y="346" key="FileChooserDialogImpl/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575546737492" />
-    <state width="1899" height="-12" key="GridCell.Tab.0.bottom" timestamp="1575557788434">
+    <state width="1899" height="-11" key="GridCell.Tab.0.bottom" timestamp="1575769958698">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-12" key="GridCell.Tab.0.bottom/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575557788434" />
-    <state width="1899" height="-12" key="GridCell.Tab.0.center" timestamp="1575557788433">
+    <state width="1899" height="-11" key="GridCell.Tab.0.bottom/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958698" />
+    <state width="1899" height="-11" key="GridCell.Tab.0.center" timestamp="1575769958697">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-12" key="GridCell.Tab.0.center/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575557788433" />
-    <state width="1899" height="-12" key="GridCell.Tab.0.left" timestamp="1575557788433">
+    <state width="1899" height="-11" key="GridCell.Tab.0.center/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958697" />
+    <state width="1899" height="-11" key="GridCell.Tab.0.left" timestamp="1575769958697">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-12" key="GridCell.Tab.0.left/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575557788433" />
-    <state width="1899" height="-12" key="GridCell.Tab.0.right" timestamp="1575557788434">
+    <state width="1899" height="-11" key="GridCell.Tab.0.left/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958697" />
+    <state width="1899" height="-11" key="GridCell.Tab.0.right" timestamp="1575769958698">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-12" key="GridCell.Tab.0.right/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575557788434" />
-    <state width="1899" height="-12" key="GridCell.Tab.1.bottom" timestamp="1575557788437">
+    <state width="1899" height="-11" key="GridCell.Tab.0.right/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958698" />
+    <state width="1899" height="-11" key="GridCell.Tab.1.bottom" timestamp="1575769958699">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-12" key="GridCell.Tab.1.bottom/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575557788437" />
-    <state width="1899" height="-12" key="GridCell.Tab.1.center" timestamp="1575557788435">
+    <state width="1899" height="-11" key="GridCell.Tab.1.bottom/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958699" />
+    <state width="1899" height="-11" key="GridCell.Tab.1.center" timestamp="1575769958698">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-12" key="GridCell.Tab.1.center/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575557788435" />
-    <state width="1899" height="-12" key="GridCell.Tab.1.left" timestamp="1575557788434">
+    <state width="1899" height="-11" key="GridCell.Tab.1.center/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958698" />
+    <state width="1899" height="-11" key="GridCell.Tab.1.left" timestamp="1575769958698">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-12" key="GridCell.Tab.1.left/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575557788434" />
-    <state width="1899" height="-12" key="GridCell.Tab.1.right" timestamp="1575557788436">
+    <state width="1899" height="-11" key="GridCell.Tab.1.left/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958698" />
+    <state width="1899" height="-11" key="GridCell.Tab.1.right" timestamp="1575769958698">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-12" key="GridCell.Tab.1.right/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575557788436" />
-    <state x="689" y="281" width="1231" height="728" key="SettingsEditor" timestamp="1575546741858">
+    <state width="1899" height="-11" key="GridCell.Tab.1.right/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958698" />
+    <state x="336" y="266" width="1231" height="728" key="SettingsEditor" timestamp="1575642827475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="778" y="184" key="SettingsEditor/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575542412036" />
-    <state x="689" y="281" width="1231" height="728" key="SettingsEditor/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575546741858" />
+    <state x="336" y="266" width="1231" height="728" key="SettingsEditor/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575642827475" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
