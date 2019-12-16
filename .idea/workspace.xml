@@ -2,19 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="509bd23f-25bc-4319-9094-26339abcfbd9" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/17885.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/PHP/loginManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/PHP/registerManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/PHP/userInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/userInfoCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/userInfoCSS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ASP/registerManager.asp" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ASP/registerManager.asp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/userInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/HkingAuditore/Header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/HkingAuditore/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/test/user.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="405" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="userdata: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="userdata: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="userinfo: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="HkingAuditore.github.io" />
@@ -42,9 +94,6 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1TmbjIAg60mY2U2sx16RvBgcin5" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="添加" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -52,7 +101,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -70,9 +121,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.userInfo.html">
+  <component name="RunManager" selected="PHP Script.index.php">
     <configuration name="Newbie'sKitchen" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="63342">
       <method v="2" />
     </configuration>
@@ -104,6 +155,9 @@
         <option name="LaunchBrowser.Before.Run" url="http://localhost:63343/Newbie'sKitchen/index.html" />
       </method>
     </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/pages/index.php">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Attach to Node.js/Chrome.Unnamed" />
       <item itemvalue="Attach to Node.js/Chrome.Newbie'sKitchen" />
@@ -111,9 +165,11 @@
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.userInfo.html" />
       <item itemvalue="JavaScript Debug.register.html" />
+      <item itemvalue="PHP Script.index.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.index.php" />
         <item itemvalue="JavaScript Debug.userInfo.html" />
         <item itemvalue="JavaScript Debug.register.html" />
         <item itemvalue="JavaScript Debug.index.html" />
@@ -162,7 +218,20 @@
       <workItem from="1575604280450" duration="79000" />
       <workItem from="1575627102464" duration="691000" />
       <workItem from="1575642742366" duration="2672000" />
-      <workItem from="1575769931633" duration="335000" />
+      <workItem from="1575769931633" duration="1175000" />
+      <workItem from="1575966973028" duration="2973000" />
+      <workItem from="1575989589934" duration="599000" />
+      <workItem from="1576400946355" duration="331000" />
+      <workItem from="1576401293486" duration="764000" />
+      <workItem from="1576402879966" duration="3314000" />
+      <workItem from="1576412394768" duration="104000" />
+      <workItem from="1576412552025" duration="349000" />
+      <workItem from="1576413043541" duration="130000" />
+      <workItem from="1576413268677" duration="34000" />
+      <workItem from="1576413377502" duration="3300000" />
+      <workItem from="1576471514738" duration="848000" />
+      <workItem from="1576472540639" duration="125000" />
+      <workItem from="1576491672460" duration="7022000" />
     </task>
     <servers />
   </component>
@@ -186,14 +255,40 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="654" y="83" width="616" height="873" key="#PHP" timestamp="1576411405965">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="654" y="83" width="616" height="873" key="#PHP/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411405965" />
+    <state x="2472" y="168" key="#SQL_方言" timestamp="1576494346475">
+      <screen x="1920" y="-10" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#SQL_方言/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576415117952" />
+    <state x="2472" y="168" key="#SQL_方言/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1576494346475" />
+    <state x="371" y="356" key="#SQL_解析作用域" timestamp="1576404733716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="371" y="356" key="#SQL_解析作用域/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576404733716" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576411112035">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411112035" />
     <state x="2216" y="424" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1575546740532">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
     <state x="2216" y="424" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575546740532" />
-    <state x="2560" y="236" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575541722339">
-      <screen x="1920" y="-10" width="1920" height="1040" />
+    <state x="640" y="246" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575989501251">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="640" y="246" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575989501251" />
     <state x="2560" y="236" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575541722339" />
+    <state x="673" y="211" key="#index.php" timestamp="1576403053455">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="673" y="211" key="#index.php/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576403053455" />
+    <state width="251" height="195" key="DatabaseViewActions_Filter" timestamp="1576411213040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="251" height="195" key="DatabaseViewActions_Filter/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411213040" />
     <state width="526" height="618" key="DebuggerActiveHint" timestamp="1575543986253">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
@@ -202,43 +297,65 @@
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
     <state x="2800" y="346" key="FileChooserDialogImpl/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575546737492" />
-    <state width="1899" height="-11" key="GridCell.Tab.0.bottom" timestamp="1575769958698">
+    <state width="1293" height="91" key="GridCell.Tab.0.bottom" timestamp="1576492649945">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-11" key="GridCell.Tab.0.bottom/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958698" />
-    <state width="1899" height="-11" key="GridCell.Tab.0.center" timestamp="1575769958697">
+    <state width="1877" height="330" key="GridCell.Tab.0.bottom/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576403020714" />
+    <state width="1293" height="91" key="GridCell.Tab.0.bottom/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1576492649945" />
+    <state width="1293" height="91" key="GridCell.Tab.0.center" timestamp="1576492649945">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-11" key="GridCell.Tab.0.center/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958697" />
-    <state width="1899" height="-11" key="GridCell.Tab.0.left" timestamp="1575769958697">
+    <state width="1877" height="330" key="GridCell.Tab.0.center/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576403020714" />
+    <state width="1293" height="91" key="GridCell.Tab.0.center/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1576492649945" />
+    <state width="1293" height="91" key="GridCell.Tab.0.left" timestamp="1576492649945">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-11" key="GridCell.Tab.0.left/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958697" />
-    <state width="1899" height="-11" key="GridCell.Tab.0.right" timestamp="1575769958698">
+    <state width="1877" height="330" key="GridCell.Tab.0.left/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576403020713" />
+    <state width="1293" height="91" key="GridCell.Tab.0.left/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1576492649945" />
+    <state width="1293" height="91" key="GridCell.Tab.0.right" timestamp="1576492649945">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
-    <state width="1899" height="-11" key="GridCell.Tab.0.right/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958698" />
-    <state width="1899" height="-11" key="GridCell.Tab.1.bottom" timestamp="1575769958699">
-      <screen x="1920" y="-10" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="-11" key="GridCell.Tab.1.bottom/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958699" />
-    <state width="1899" height="-11" key="GridCell.Tab.1.center" timestamp="1575769958698">
-      <screen x="1920" y="-10" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="-11" key="GridCell.Tab.1.center/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958698" />
-    <state width="1899" height="-11" key="GridCell.Tab.1.left" timestamp="1575769958698">
-      <screen x="1920" y="-10" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="-11" key="GridCell.Tab.1.left/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958698" />
-    <state width="1899" height="-11" key="GridCell.Tab.1.right" timestamp="1575769958698">
-      <screen x="1920" y="-10" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="-11" key="GridCell.Tab.1.right/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575769958698" />
-    <state x="336" y="266" width="1231" height="728" key="SettingsEditor" timestamp="1575642827475">
+    <state width="1877" height="330" key="GridCell.Tab.0.right/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576403020714" />
+    <state width="1293" height="91" key="GridCell.Tab.0.right/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1576492649945" />
+    <state width="220" height="539" key="HiddenNamespacesPopup" timestamp="1576411908571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="778" y="184" key="SettingsEditor/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575542412036" />
+    <state width="220" height="539" key="HiddenNamespacesPopup/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411908571" />
+    <state x="2696" y="433" key="NewPhpFileDialog" timestamp="1576494100256">
+      <screen x="1920" y="-10" width="1920" height="1040" />
+    </state>
+    <state x="776" y="443" key="NewPhpFileDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576412206758" />
+    <state x="2696" y="433" key="NewPhpFileDialog/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1576494100256" />
+    <state x="469" y="224" width="1149" height="709" key="SettingsEditor" timestamp="1576472632031">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="469" y="224" width="1149" height="709" key="SettingsEditor/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576472632031" />
     <state x="336" y="266" width="1231" height="728" key="SettingsEditor/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575642827475" />
+    <state width="200" height="523" key="SqlResolveConfigurable" timestamp="1576414973735">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="200" height="523" key="SqlResolveConfigurable/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576414973735" />
+    <state x="676" y="160" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1576411331355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="160" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411331355" />
+    <state x="822" y="217" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1576411828853">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="822" y="217" key="com.intellij.database.view.ui.DbObjectDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411828853" />
+    <state x="645" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576472546620">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="645" y="343" key="com.intellij.ide.util.TipDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576472546620" />
+    <state x="1920" y="-10" width="800" height="1028" maximized="true" key="dock-window-1" timestamp="1576415543016">
+      <screen x="1920" y="-10" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="-10" width="800" height="1028" maximized="true" key="dock-window-1/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576415543016" />
+    <state x="2155" y="-10" width="800" height="1028" key="dock-window-2" timestamp="1576471539418">
+      <screen x="1920" y="-10" width="1920" height="1040" />
+    </state>
+    <state x="2155" y="-10" width="800" height="1028" key="dock-window-2/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576415916320" />
+    <state x="2155" y="-10" width="800" height="1028" key="dock-window-2/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1576471539418" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/pages/PHP/loginManager.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pages/PHP/registerManager.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pages/PHP/userInfo.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pages/index.php" dialect="MySQL" />
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
+  <component name="SqlResolveMappings">
+    <file url="PROJECT" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;c11469e2-6cfe-4656-8ecf-0719ac030460&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;schema&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;userdata&quot;      }     }    }   }  } }}" />
+  </component>
+</project>

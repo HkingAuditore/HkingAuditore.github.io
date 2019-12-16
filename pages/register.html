@@ -82,7 +82,7 @@
                     <div class=" container-fluid" style="width: 230%;">
                         <div class=" row" style="background-color: rgb(255, 253, 246); padding: 8% 20% 10% 20%;border-radius: 40px;box-shadow: 2px 2px 20px 5px rgba(88, 61, 38, 0.432);">
                             <div class=" col-12">
-                                <form class="needs-validation" action="ASP/registerManager.asp" id="form-register" method="post" name="registerForm" enctype="multipart/form-data" novalidate>
+                                <form class="needs-validation" action="PHP/registerManager.php" id="form-register" method="post" name="registerForm" enctype="multipart/form-data" novalidate>
                                     <div class=" row">
                                         <div class=" col-sm-12">
                                             <p class=" my-title" style="color: rgb(218, 98, 61);padding-bottom: 5%;font-size: 4.2vw;text-align: center;">
@@ -133,7 +133,7 @@
 
                                             <p>上传头像：</p>
                                             <div class="custom-file" style="margin-bottom: 5%;">
-                                                <input type="file" class="custom-file-input" id="avatar_img" onchange="preview(this)" oninput="checkImg(this)" accept="image/jpeg" name="file1" multiple="multiple" required/>
+                                                <input type="file" class="custom-file-input" id="avatar_img" onchange="preview(this)" oninput="checkImg(this)" accept="image/jpeg" name="file" multiple="multiple" required/>
                                                 <label class="custom-file-label" for="avatar_img" style="color: rgb(221, 221, 221);" data-browse="浏览...">选择头像</label>
                                                 <div class="invalid-feedback" id="AvatarFeedback">文件不可用！请选择一个jpg格式的图片！</div>
                                                 <div class="valid-feedback">文件可用！</div>
@@ -182,11 +182,11 @@
                                         <div class=" col-lg-2">
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="favor1" name="favor" value="steam">
+                                                    <input type="checkbox" class="custom-control-input" id="favor1" name="favor[]" value="steam">
                                                     <label class="custom-control-label" for="favor1">PC(Steam)</label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="favor2" name="favor" value="epic">
+                                                    <input type="checkbox" class="custom-control-input" id="favor2" name="favor[]" value="epic">
                                                     <label class="custom-control-label" for="favor2">PC(EPIC)</label>
                                                 </div>
                                             </div>
@@ -194,11 +194,11 @@
                                         <div class=" col-lg-2">
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="favor3" name="favor" value="ps4">
+                                                    <input type="checkbox" class="custom-control-input" id="favor3" name="favor[]" value="ps4">
                                                     <label class="custom-control-label" for="favor3">PS4</label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="favor4" name="favor" value="xbox">
+                                                    <input type="checkbox" class="custom-control-input" id="favor4" name="favor[]" value="xbox">
                                                     <label class="custom-control-label" for="favor4">XBOX</label>
                                                 </div>
                                             </div>
@@ -206,11 +206,11 @@
                                         <div class=" col-lg-2">
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="favor5" name="favor" value="ns">
+                                                    <input type="checkbox" class="custom-control-input" id="favor5" name="favor[]" value="ns">
                                                     <label class="custom-control-label" for="favor5">Nintendo Switch</label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="favor6" name="favor" value="android">
+                                                    <input type="checkbox" class="custom-control-input" id="favor6" name="favor[]" value="android">
                                                     <label class="custom-control-label" for="favor6">Android</label>
                                                 </div>
                                             </div>
@@ -218,7 +218,7 @@
                                         <div class=" col-lg-2">
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="favor7" name="favor" value="ios">
+                                                    <input type="checkbox" class="custom-control-input" id="favor7" name="favor[]" value="ios">
                                                     <label class="custom-control-label" for="favor7">iOS</label>
                                                 </div>
                                             </div>
@@ -330,7 +330,7 @@
         function checkAccount(input) {
             var acc = input.value;
             var reg = /^[\u4e00-\u9fa5]{0,}$/;
-            var fileUrl = "../users/" + acc + "/user.json";
+            var fileUrl = "../users/" + acc + ".jpg";
             // alert(fileUrl);
             if (reg.test(acc)) {
                 input.setCustomValidity("账户不可用！");
