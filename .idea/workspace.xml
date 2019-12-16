@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="509bd23f-25bc-4319-9094-26339abcfbd9" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/17885.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/PHP/loginManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/PHP/registerManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/PHP/userInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/userInfoCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/userInfoCSS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/PHP/loginManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/loginManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/PHP/registerManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/registerManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/HkingAuditore/Header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/HkingAuditore/user.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/test/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/HkingAuditore.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +221,7 @@
       <workItem from="1576413377502" duration="3300000" />
       <workItem from="1576471514738" duration="848000" />
       <workItem from="1576472540639" duration="125000" />
-      <workItem from="1576491672460" duration="7022000" />
+      <workItem from="1576491672460" duration="9386000" />
     </task>
     <servers />
   </component>

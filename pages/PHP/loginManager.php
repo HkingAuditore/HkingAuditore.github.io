@@ -113,6 +113,12 @@ mysqli_query($conn, "set names utf8");
                                             var target = \"window.location='userInfo.php'\";
                                             window.setTimeout(target,2000);
                                         </script>";
+                            }else{
+                                echo "<h1>登录失败！稍后自动跳转到登录页面</h1>
+                                        <script>
+                                            var target = \"window.location='../login.html'\";
+                                            window.setTimeout(target,2000);
+                                        </script>";
                             }
                             mysqli_free_result($retval);
                             mysqli_close($conn);

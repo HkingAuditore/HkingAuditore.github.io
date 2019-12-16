@@ -13,7 +13,14 @@ $favor_arr=$_POST["favor"];
 $favor = implode(',', $favor_arr);
 $edition =$_POST["edition"];
 $pwd =$_POST["pwd"];
-$enableemail =$_POST["enableEmail"];
+
+
+$enableemail_arr=array();
+$enableemail_arr=$_POST["enableEmail"];
+$enableemail =$enableemail_arr[0];
+if(array_key_exists(1,$enableemail_arr)){
+    $enableemail =$enableemail_arr[1];
+}
 $allowedExts = array("gif", "jpeg", "jpg", "png");
 $temp = explode(".", $_FILES["file"]["name"]);
 //echo $_FILES["file"]["size"];
@@ -157,6 +164,7 @@ mysqli_close($conn);
                                 echo "<h2>注册成功！转到登录页面</h2>";
                                 $url = "../login.html";
                                 echo "<script language='javascript'type='text/javascript'>";
+
                                 echo "setTimeout(\"window.location.href='$url'\", 1000);";
                                 echo "</script>";
 
