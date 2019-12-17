@@ -86,42 +86,57 @@
             width: 2500px;
         }
         
-        header.mainBar {
+        header.main-bar {
             position: absolute;
             vertical-align: middle;
             /* text-align: right; */
             /* background-color: rgba(147, 82, 204, 0.747); */
             padding-top: 1%;
             /* padding-left: 40%; */
-            width: 60ex;
+            width: 55ex;
             height: 4ex;
             /* align-items: flex-end; */
         }
         
         header .mainBar a {
-            text-decoration: none;
+            margin-top: 0.4%;
+            padding-right: 2ex;
+            float: right;
+            color: rgb(34, 34, 34);
+            font-weight: normal;
             vertical-align: middle;
             font-family: myFont;
             /* height: 100%; */
             font-size: 1vw;
             text-align: right;
-            color: #3a3535;
             font-weight: bold;
-            transition: 0.25s cubic-bezier(.55, 1.75, .55, 1.65);
+            transition: 0.2s cubic-bezier(.55, 1.75, .55, 1.65);
         }
         
         header .mainBar a:hover {
             font-size: 1.2vw;
-            color: #774c24;
         }
         
-        .mytitle {
+        h1 {
             /* position: absolute; */
             text-decoration: none;
             font-family: mainTitle;
             /* height: 100%; */
             font-size: 9vw;
-            text-align: left;
+            z-index: 5;
+            /* text-align: left; */
+            color: #3a3535;
+            /* font-weight: bold; */
+        }
+        
+        h2 {
+            /* position: absolute; */
+            text-decoration: none;
+            font-family: mainTitle;
+            /* height: 100%; */
+            /* font-size: 9vw; */
+            z-index: 5;
+            /* text-align: left; */
             color: #3a3535;
             /* font-weight: bold; */
         }
@@ -233,4 +248,14 @@
             border-left: 10px solid rgb(255, 255, 255);
             border-bottom: 10px solid rgb(255, 255, 255);
             border-right: 10px solid rgb(255, 255, 255);
+        }
+        
+        video.bg {
+            position: relative;
+            /* height: 75vh; */
+            min-height: 15rem;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 2%;
+            /* background-color: aqua; */
         }

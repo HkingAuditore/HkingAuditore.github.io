@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="509bd23f-25bc-4319-9094-26339abcfbd9" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/PHP/loginManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/loginManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/PHP/registerManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/registerManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/HkingAuditore.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +110,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
-  <component name="RunManager" selected="PHP Script.index.php">
+  <component name="RunManager" selected="Attach to Node.js/Chrome.Unnamed">
     <configuration name="Newbie'sKitchen" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="63342">
       <method v="2" />
     </configuration>
@@ -155,11 +152,9 @@
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.userInfo.html" />
       <item itemvalue="JavaScript Debug.register.html" />
-      <item itemvalue="PHP Script.index.php" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.index.php" />
         <item itemvalue="JavaScript Debug.userInfo.html" />
         <item itemvalue="JavaScript Debug.register.html" />
         <item itemvalue="JavaScript Debug.index.html" />
@@ -221,7 +216,8 @@
       <workItem from="1576413377502" duration="3300000" />
       <workItem from="1576471514738" duration="848000" />
       <workItem from="1576472540639" duration="125000" />
-      <workItem from="1576491672460" duration="9386000" />
+      <workItem from="1576491672460" duration="10022000" />
+      <workItem from="1576546926872" duration="825000" />
     </task>
     <servers />
   </component>

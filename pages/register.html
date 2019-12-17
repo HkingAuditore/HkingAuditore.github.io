@@ -329,7 +329,7 @@
 
         function checkAccount(input) {
             var acc = input.value;
-            var reg = /^[\u4e00-\u9fa5]{0,}$/;
+            var reg = /[^\u0000-\u00FF]/;
             var fileUrl = "../users/" + acc + ".jpg";
             // alert(fileUrl);
             if (reg.test(acc)) {
