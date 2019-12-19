@@ -22,7 +22,6 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/language/zh_CN.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
-
     <link href="css/indexCSS.css" rel="stylesheet" />
     <link rel="stylesheet" href="WebGL/TemplateData/style.css">
     <script src="WebGL/TemplateData/UnityProgress.js"></script>
@@ -40,11 +39,12 @@
 
 <header>
 
-    <div class=" container-fluid">
+    <div class="container-fluid">
         <div class="row" style="height: 2vw;">
             <div class="col-1">
                 <a href="index.html">
-                    <img src="img/logo.png" style="position:absolute; margin-left: 0.8%; margin-top: 1vw;" width="100px" />
+                    <img src="img/logo.png" style="position:absolute;
+                            margin-left: 0.8%; margin-top: 1vw;" width="100px" />
                 </a>
             </div>
             <div class="col-7">
@@ -53,24 +53,28 @@
                     <a href="" style="text-decoration: none;">线上预览</a>
                     <a href="" style="text-decoration: none;">预购/捐赠</a>
                     <a href="" style="text-decoration: none;">开发日志</a>
-                    <div class="player" style="float:right;margin-right: 3%;margin-top: -0.1%;">
+                    <div class="player" style="float:right;margin-right:
+                            3%;margin-top: -0.1%;">
                         <div class="play" id="player" onclick="Player()">
                             <audio id="BGM" loop="" preload="">
-                    <source src="music/做菜2无损完整 (1).mp3" />
-                </audio>
+                                    <source src="music/做菜2无损完整 (1).mp3" />
+                                </audio>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-4">
-                <div class="row" style="height: 7200%;">
-                    <div class="col-4" style="background-color: #ffa14e;z-index: -1;">
+                <div class="row" style="position: fixed;height: 100vw;width: 33.3%;z-index: -5; ">
+                    <div class="col-4" style="background-color:
+                            #ffa14e;z-index: -1;">
 
                     </div>
-                    <div class="col-4" style="background-color: #ffc44e;z-index: -1;">
+                    <div class="col-4" style="background-color:
+                            #ffc44e;z-index: -1;">
 
                     </div>
-                    <div class="col-4" style="background-color: #ffe74e;z-index: -1;">
+                    <div class="col-4" style="background-color:
+                            #ffe74e;z-index: -1;">
 
                     </div>
                 </div>
@@ -82,25 +86,32 @@
 
 
 <body>
-    <div class=" container-fluid">
+    <div class="container-fluid">
 
-        <div class=" row" style="width: 100%; padding-top: 10%;">
-            <div class=" col-7" style="padding-left: 6%;">
+        <div class="row" style="width: 100%; padding-top: 10%;">
+            <div class="col-7" style="padding-left: 6%;">
 
                 <div class="row">
                     <div class="col-12" style="left: 5%;">
                         <h1>
-                            <span class="mytitle" style="position: relative; letter-spacing: -0.8vw">
-                                烹饪
+                            <span class="mytitle" style="position: relative;
+                                    letter-spacing: -0.8vw">
+                                    烹饪
                                 </span>
-                            <span class="mytitle" style="position: relative;font-size: 50%;padding-top: 8%;left: 0;">
-                                &
+                            <span class="mytitle" style="position:
+                                    relative;font-size: 50%;padding-top:
+                                    8%;left: 0;">
+                                    &
                                 </span>
-                            <span class="mytitle" style="position: relative; letter-spacing: -0.8vw;left: -2%;">
-                                创造
+                            <span class="mytitle" style="position: relative;
+                                    letter-spacing: -0.8vw;left: -2%;">
+                                    创造
                                 </span>
                         </h1>
-                        <div class="box" style="position:absolute;background-color:rgba(255,196, 78, 0.5); left:8%;width: 73%;height: 40%; top:55%;z-index: -1;"></div>
+                        <div class="box" style="position:absolute;background-color:rgba(255,196,
+                                78, 0.5); left:8%;width: 73%;height: 40%;
+                                top:55%;z-index: -1;">
+                        </div>
                     </div>
                 </div>
 
@@ -114,85 +125,103 @@
                 <div class="row" style="margin-top:-2%;margin-left: 5%;">
                     <div class="col-12">
                         <p class="normal">
-                            一步步研究迷人的美食秘方，创作出属于自己的绝世极味！<br/> 在美食小镇探寻饮食背后的奇妙故事。
+                            一步步研究迷人的美食秘方，创作出属于自己的绝世极味！<br /> 在美食小镇探寻饮食背后的奇妙故事。
                         </p>
                     </div>
                 </div>
                 <div class="row" style="margin-left: 5%;">
                     <div class="col-12">
-                        <a class="button" href="pages/register.html" style="width: 40%;margin-top: 8%;text-decoration: none;">
-                            现在预购
-                        </a>
+                        <a class="button" href="pages/register.html" style="width: 40%;margin-top:
+                                8%;text-decoration: none;">
+                                现在预购
+                            </a>
                     </div>
                 </div>
             </div>
-            <div class=" col-5">
+            <div class="col-5">
                 <img alt="" src="img/index/1449.png" style="float:right;right:15%;z-index:3;top: -15%;" width="95%" />
             </div>
 
         </div>
     </div>
 
-    <video class="bg" airplay="allow " autoplay=" " id="video " loop=" " muted=" " playsinline="true " preload=" " src="video/test000_x264_1.mp4 " style="z-index: -1;margin: 0;" webkit-playsinline="true " width="100% " x-webkit-airplay="true ">
-    </video>
+    <video class="bg" airplay="allow" autoplay="" id="video" loop="" muted="" playsinline="true" preload="" src="video/test000_x264_1.mp4" style="z-index:
+            -1;margin: 0;" webkit-playsinline="true" width="100%" x-webkit-airplay="true">
+        </video>
 
-    <div class=" container-fluid">
-        <div class="row " style="margin-top: -30%;">
-            <div class="col-12 ">
-                <h1 style="letter-spacing: -1%;color: white;text-shadow: 5px 5px 5px rgb(99, 66, 23);text-align: center;z-index: 5; ">
+    <div class="container-fluid">
+        <div class="row" style="margin-top: -30%;">
+            <div class="col-12">
+                <h1 style="letter-spacing: -1%;color: white;text-shadow: 5px
+                        5px 5px rgb(99, 66, 23);text-align: center;z-index: 5;">
                     执掌你的厨房
                 </h1>
             </div>
         </div>
 
         <div class="row">
-            <div class=" col-2 offset-4">
-                <img src="img/Register/组 1.png" width="210%" style="z-index: 5; margin-top: 10%;" />
+            <div class="col-2 offset-4">
+                <img src="img/Register/组 1.png" width="210%" style="z-index:
+                        5; margin-top: 10%;" />
             </div>
         </div>
 
         <div class="row">
             <div class="col-12" style="padding-left: 5%;padding-right: 5%;">
-                <div class="row" style="background-color: rgb(240, 196, 140);border-radius: 10rem;padding-top: 13%;padding-left: 5%;padding-right: 5%;margin-top: -6%;padding-bottom: 5%;">
-                    <div class="col-12" style="margin-top: -11%;background-color: rgb(255, 253, 246);border-radius: 10rem;box-shadow: 2px 2px 20px 5px rgba(88, 61, 38, 0.432);padding-top: 10%;    padding-left: 10%;padding-right: 10%;padding-bottom: 10%;">
+                <div class="row" style="background-color: rgb(240, 196,
+                        140);border-radius: 10rem;padding-top: 13%;padding-left:
+                        5%;padding-right: 5%;margin-top: -6%;padding-bottom:
+                        5%;">
+                    <div class="col-12" style="margin-top: -11%;background-color: rgb(255,
+                            253, 246);border-radius: 10rem;box-shadow: 2px 2px
+                            20px 5px rgba(88, 61, 38, 0.432);padding-top: 10%;
+                            padding-left: 10%;padding-right: 10%;padding-bottom:
+                            10%;">
                         <div class="row">
                             <div class="col-6">
-                                <img src="img/index/1625.png " style="border-radius: 100px;top: 12%;" width="70% " />
+                                <img src="img/index/1625.png" style="border-radius:
+                                        100px;top: 12%;" width="70%" />
                             </div>
                             <div class="col-6">
-                                <h2 style="text-align: left;color: rgb(145, 89, 6);font-size: 4vw; ">
+                                <h2 style="text-align: left;color: rgb(145,
+                                        89, 6);font-size: 4vw;">
                                     高自由度的世界
                                 </h2>
-                                <p class="normal ">
+                                <p class="normal">
                                     示例文字例文字示例文字示例文字。
-                                    <br/> 示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/> 示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/> 示例文字示例文字示例文字示例文字示例文字。
-                                    <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。
+                                    <br /> 示例文字示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。 <br /> 示例文字示例。 <br /> 示例文字示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。
+                                    <br /> 示例文字示例。 <br /> 示例文字示例文字示例文字示例文字示例文字。
+                                    <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。 <br /> 示例文字示例。
                                 </p>
                             </div>
                         </div>
 
                         <div class="row" style="margin-top: 16%;">
                             <div class="col-6">
-                                <h2 style="text-align: right;color: rgb(145, 89, 6);font-size: 4vw; ">
+                                <h2 style="text-align: right;color: rgb(145,
+                                        89, 6);font-size: 4vw;">
                                     探寻小镇的故事
                                 </h2>
-                                <p class="normal " style="text-align: right;">
+                                <p class="normal" style="text-align: right;">
                                     示例文字示例文字示例文字示例文字。
-                                    <br/> 示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/> 示例文字示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。 <br/> 示例文字示例文字示例文字示例文字示例文字。
-                                    <br/> 示例文字示例文字示例文字示例文字。 <br/> 示例文字示例文字。 <br/> 示例文字示例。
+                                    <br /> 示例文字示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。 <br /> 示例文字示例。 <br /> 示例文字示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。
+                                    <br /> 示例文字示例。 <br /> 示例文字示例文字示例文字示例文字示例文字。
+                                    <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。 <br /> 示例文字示例。
                                 </p>
                             </div>
                             <div class="col-6" style="text-align: right;">
-                                <img src="img/index/小镇.png " style="border-radius: 100px; " width="70% " />
+                                <img src="img/index/小镇.png" style="border-radius:
+                                        100px;" width="70%" />
 
                             </div>
                         </div>
 
 
-                        <div class="row" style="margin-top: 16%;">
+                        <div class="row" style="margin-top: 5%;">
                             <div class="col-12">
                                 <div class="webgl-content" style="z-index:5;position: relative;">
-                                    <div id="unityContainer" style="width: 100%; height: 600px"></div>
+                                    <div id="unityContainer" style="width:
+                                            100%; height: 600px"></div>
                                     <div class="footer">
                                     </div>
                                 </div>
@@ -200,14 +229,82 @@
                             </div>
                         </div>
 
+                        <div class="row" style="margin-top: 5%;">
+
+                            <div class="col-4" style="text-align: center;">
+                                <img src="img/index/wall.png" style="border-radius: 100%;" width="80%">
+                                <h2 style="text-align: center;margin-top:
+                                        10%;">实例</h2>
+                                <p class="normal" style="text-align: left;">
+                                    示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。
+                                </p>
+                            </div>
+
+                            <div class="col-4" style="text-align: center;">
+                                <img src="img/index/wall.png" style="border-radius: 100%;" width="80%">
+                                <h2 style="text-align: center;margin-top:
+                                        10%;">实例</h2>
+                                <p class="normal" style="text-align: left;">
+                                    示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。
+                                </p>
+                            </div>
+
+                            <div class="col-4" style="text-align: center;">
+                                <img src="img/index/wall.png" style="border-radius: 100%;" width="80%">
+                                <h2 style="text-align: center;margin-top:
+                                        10%;">实例</h2>
+                                <p class="normal" style="text-align: left;">
+                                    示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。示例文字示例文字示例文字示例文字。
+                                </p>
+                            </div>
+
+                        </div>
+
 
 
                     </div>
                 </div>
 
-                <div class="row" style="margin-top: 16%;">
+                <div class="row" style="margin-top: 14%;">
                     <div class="col-12">
-                        <img src="img/index/smoke.png " style="margin-top: -22%; left:3vw;right:5vw;filter: drop-shadow(2px 8px 6px rgba(107, 91, 53, 0.253));" width="100% ">
+                        <img src="img/index/smoke.png" style="margin-top:
+                                -22%; left:3vw;right:5vw;filter: drop-shadow(2px
+                                10px 6px rgba(112, 107, 94, 0.288));z-index: 2;" width="100%">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: -32%;height: 40vw; overflow:
+                        hidden;width: 111.58%;margin-left: -6%;padding-top:
+                        2%;">
+                    <div class="col-12" style="padding-top: 5%;margin-top:
+                            10%;">
+                        <div style="position: absolute;">
+
+                            <div class="circle mid-red" style="width:
+                                    45vw;height: 45vw;top: -10vw;left: 30vw; z-index: -10;"></div>
+                            <div class="circle mid-red" style="width:
+                                    70vw;height: 70vw;top: -10vw;left: -20vw;"></div>
+                            <div class="circle mid-red" style="width:
+                                    70vw;height: 70vw;top: -14vw;left: 60vw;"></div>
+                            <div class="circle mid-brightRed" style="width:
+                                    40vw;height: 40vw;top: 10vw;left: 40vw;">
+                            </div>
+
+                            <div class="circle mid-orange" style="width:
+                                    30vw;height: 30vw;top: 10vw;left:70vw;">
+                            </div>
+
+                            <div class="circle mid-yellow" style="width:
+                                    60vw;height: 60vw;top: 10vw;left:15vw;">
+                            </div>
+                            <div class="circle mid-yellow" style="width:
+                                    60vw;height: 60vw;top: 1vw;left:-10vw;">
+                            </div>
+                            <div class="circle mid-yellow" style="width:
+                                    60vw;height: 60vw;top: -0vw;left:60vw;">
+                            </div>
+
+                        </div>
+                        <!-- <img src=" img/index/组 7.png " style="position: absolute; overflow: hidden; margin-top: 4%; left:0vw;right:5vw;filter: drop-shadow(2px 8px 6px rgba(107, 91, 53, 0.253)); " width="100% "> -->
                     </div>
                 </div>
             </div>
