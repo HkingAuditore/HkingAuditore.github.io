@@ -269,7 +269,7 @@
         
         .mid-red {
             background-color: #C73232;
-            z-index: 1;
+            z-index: -1;
         }
         
         .mid-brightRed {
@@ -279,10 +279,17 @@
         
         .mid-orange {
             background-color: #F58351;
-            z-index: 3;
+            z-index: 2;
         }
         
         .mid-yellow {
             background-color: #FFCF31;
-            z-index: 3;
+            z-index: 2;
+        }
+        
+        .smoke {
+            background-color: #fffdf6;
+            height: 3.5vw;
+            border-radius: 2vw;
+            box-shadow: 1px 8px 5px rgba(105, 92, 85, 0.274);
         }

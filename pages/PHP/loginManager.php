@@ -62,10 +62,10 @@ mysqli_query($conn, "set names utf8");
     </a>
 
     <div align="right" class="mainBar" style="float: right;right: 0;width: 1300px;margin-top: 1vw;margin-right: 1vw;">
-        <a href="" style="text-decoration: none;">关于我们</a>
-        <a href="" style="text-decoration: none;">线上预览</a>
-        <a href="" style="text-decoration: none;">预购/捐赠</a>
-        <a href="" style="text-decoration: none;">开发日志</a>
+    <a class=" toolbar" href="PHP/userInfo.php" style="text-decoration: none;">个人面板</a>
+        <a class=" toolbar" href="" style="text-decoration: none;">线上预览</a>
+        <a class=" toolbar" href="" style="text-decoration: none;">预购/捐赠</a>
+        <a class=" toolbar" href="../devLog.html" style="text-decoration: none;">开发日志</a>
         <div class="player" style="float:right;margin-right: 3%;margin-top: -0.1%;">
             <div class="play" id="player" onclick="Player()">
                 <audio id="BGM" loop="" preload="">

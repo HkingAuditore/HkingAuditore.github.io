@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newbie's Kitchen</title>
+
+    <link href="../img/icon.ico" rel="icon" type="image/x-ico" />
+    <!--    <link rel="shortcut icon" href=" WebGL/TemplateData/favicon.ico">-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/core.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/language/zh_CN.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <link href="../css/devLog.css" rel="stylesheet" />
+    <script src="../scripts/indexJS.js"></script>
+    <script src="../scripts/audioPlayer.js"></script>
+
+    <!-- <script src="../plugin/showdown-1.9.1/dist/showdown.js"></script> -->
+    <script src="../scripts/marked.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/mermaid/8.3.1/mermaid.core.js"></script> -->
+    <script src="https://cdn.bootcss.com/mermaid/8.3.1/mermaid.js"></script>
+    <script src="../scripts/mermaidAPI.js"></script>
+    <script>
+        mermaidAPI.initialize({
+            startOnLoad: true,
+            flowchart: {
+                useMaxWidth: false,
+                htmlLabels: true
+            }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ showProcessingMessages: false, messageStyle: "none", extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"], tex2jax: { inlineMath: [ ["$", "$"] ], displayMath: [ ["$$","$$"] ], skipTags: ['script', 'noscript', 'style',
+        'textarea', 'pre','code','a'], ignoreClass:"comment-content" }, "HTML-CSS": { availableFonts: ["STIX","TeX"], showMathMenu: false }})
+    </script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=default"></script>
+
+
+
+    <link href="../css/markdown.css" rel="stylesheet">
+    <link href="../plugin/highLight/styles/atom-one-dark-reasonable.css" rel="stylesheet">
+    <script src="../plugin/highLight/highlight.pack.js"></script>
+    <script src="https://cdn.bootcss.com/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.js"></script>
+
+    <script>
+        hljs.initHighlightingOnLoad();
+        hljs.initLineNumbersOnLoad();
+    </script>
+    <script>
+        function showMarkdown(target) {
+            var xmlhttp;
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                xmlhttp = new ActiveXObject('Microsoft.XMLHttp');
+            }
+
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    // var converter = new showdown.Converter({
+                    //         tables: true
+                    //     }) // 初始化转换器
+
+                    document.querySelector("div[aria-labelledby='" + target + "']").innerHTML = marked(xmlhttp.responseText);
+                    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+                    console.log(marked(xmlhttp.responseText));
+                    document.querySelectorAll('pre code').forEach((block) => {
+                        hljs.highlightBlock(block);
+                        hljs.lineNumbersBlock(block);
+                    });
+
+                }
+            }
+
+            xmlhttp.open('GET', "../devLogs/" + target + ".md", true);
+            console.log("../devLogs/" + target + ".md");
+            xmlhttp.send();
+
+
+
+
+        }
+    </script>
+</head>
+
+
+<header style="height: 51vw;">
+
+    <div class="container-fluid">
+        <div class="row" style="height: 2vw;">
+            <div class="col-1">
+                <a href="../index.html">
+                    <img src="../img/logo.png" style="position:absolute;
+                            margin-left: 0.8%; margin-top: 1vw;" width="100px" />
+                </a>
+            </div>
+            <div class="col-8 offset-4">
+                <div align="right" class="mainBar" style="margin-top: 1vw;">
+                    <a href="PHP/userInfo.php" style="text-decoration: none;">个人面板</a>
+                    <a href="" style="text-decoration: none;">线上预览</a>
+                    <a href="" style="text-decoration: none;">预购/捐赠</a>
+                    <a href="#" style="text-decoration: none;">开发日志</a>
+                    <div class="player" style="float:right;margin-right:
+                            3%;margin-top: -0.1%;">
+                        <div class="play" id="player" onclick="Player()">
+                            <audio id="BGM" loop="" preload="">
+                                <source src="../music/做菜2无损完整 (1).mp3" />
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10%;overflow: hidden;padding-bottom: 10%;padding-top: 10%;">
+            <div class="col-12" style="margin-left: 55%;">
+                <div style="width:75%;">
+                    <h1 class="frostedGlass mainTitle">
+                        <span style="margin-left: 8%;">
+                            开发日志
+                        </span>
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" style="padding-bottom: 20%;">
+            <div class="col-xl-2 col-md-2" style="padding-left: 0; ;">
+                <div class=" sideBar" style="margin-top: -1.8vw;padding-top: 12%;width: 80%">
+                    <div class="list-group" id="logList" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="20191221-list" data-toggle="list" href="#list-20191221" role="tab" aria-controls="20191221">2019年12月21日</a>
+                        <a class="list-group-item list-group-item-action" id="20191220-list" data-toggle="list" href="#list-20191220" role="tab" aria-controls="20191220">2019年12月20日</a>
+                        <a class="list-group-item list-group-item-action" id="20191219-list" data-toggle="list" href="#list-20191219" role="tab" aria-controls="20191219">2019年12月19日</a>
+                        <a class="list-group-item list-group-item-action" id="20191218-list" data-toggle="list" href="#list-20191218" role="tab" aria-controls="20191218">2019年12月18日</a>
+                        <a class="list-group-item list-group-item-action" id="20191217-list" data-toggle="list" href="#list-20191217" role="tab" aria-controls="20191217">2019年12月17日</a>
+                        <a class="list-group-item list-group-item-action" id="20191216-list" data-toggle="list" href="#list-20191216" role="tab" aria-controls="20191216">2019年12月16日</a>
+                        <a class="list-group-item list-group-item-action" id="20191215-list" data-toggle="list" href="#list-20191215" role="tab" aria-controls="20191215">2019年12月15日</a>
+                        <a class="list-group-item list-group-item-action" id="20191214-list" data-toggle="list" href="#list-20191214" role="tab" aria-controls="20191214">2019年12月14日</a>
+                        <a class="list-group-item list-group-item-action" id="20191213-list" data-toggle="list" href="#list-20191213" role="tab" aria-controls="20191213">2019年12月13日</a>
+                        <a class="list-group-item list-group-item-action" id="20191212-list" data-toggle="list" href="#list-20191212" role="tab" aria-controls="20191212">2019年12月12日</a>
+                        <a class="list-group-item list-group-item-action" id="20191211-list" data-toggle="list" href="#list-20191211" role="tab" aria-controls="20191211">2019年12月11日</a>
+                        <a class="list-group-item list-group-item-action" id="20191210-list" data-toggle="list" href="#list-20191210" role="tab" aria-controls="20191210">2019年12月10日</a>
+                        <a class="list-group-item list-group-item-action" id="20191209-list" data-toggle="list" href="#list-20191209" role="tab" aria-controls="20191209">2019年12月09日</a>
+                        <a class="list-group-item list-group-item-action" id="20191208-list" data-toggle="list" href="#list-20191208" role="tab" aria-controls="20191208">2019年12月08日</a>
+                        <a class="list-group-item list-group-item-action" id="20191207-list" data-toggle="list" href="#list-20191207" role="tab" aria-controls="20191207">2019年12月07日</a>
+                        <a class="list-group-item list-group-item-action" id="20191206-list" data-toggle="list" href="#list-20191206" role="tab" aria-controls="20191206">2019年12月06日</a>
+                        <a class="list-group-item list-group-item-action" id="20191205-list" data-toggle="list" href="#list-20191205" role="tab" aria-controls="20191205">2019年12月05日</a>
+                        <a class="list-group-item list-group-item-action" id="20191204-list" data-toggle="list" href="#list-20191204" role="tab" aria-controls="20191204">2019年12月04日</a>
+                        <a class="list-group-item list-group-item-action" id="20191203-list" data-toggle="list" href="#list-20191203" role="tab" aria-controls="20191203">2019年12月03日</a>
+                        <a class="list-group-item list-group-item-action" id="20191202-list" data-toggle="list" href="#list-20191202" role="tab" aria-controls="20191202">2019年12月02日</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-10 col-md-10" style="padding-top: 3%;">
+                <div class=" logTitle">
+                    2019年12月21日开发记录
+                </div>
+                <hr>
+                <div class=" author">
+                    @HkingAuditore
+                </div>
+                <hr>
+
+
+
+
+                <div class="tab-content markdown-body" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-20191221" role="tabpanel" aria-labelledby="20191221">20191221</div>
+                    <div class="tab-pane fade" id="list-20191220" role="tabpanel" aria-labelledby="20191220">20191220
+                    </div>
+                    <div class="tab-pane fade" id="list-20191219" role="tabpanel" aria-labelledby="20191219">20191219s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191218" role="tabpanel" aria-labelledby="20191218">20191218s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191217" role="tabpanel" aria-labelledby="20191217">20191217s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191216" role="tabpanel" aria-labelledby="20191216">20191216s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191215" role="tabpanel" aria-labelledby="20191215">20191215s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191214" role="tabpanel" aria-labelledby="20191214">20191214s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191213" role="tabpanel" aria-labelledby="20191213">20191213s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191212" role="tabpanel" aria-labelledby="20191212">20191212s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191211" role="tabpanel" aria-labelledby="20191211">20191211s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191210" role="tabpanel" aria-labelledby="20191210">20191210s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191209" role="tabpanel" aria-labelledby="20191209">20191209s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191208" role="tabpanel" aria-labelledby="20191208">20191208s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191207" role="tabpanel" aria-labelledby="20191207">20191207s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191206" role="tabpanel" aria-labelledby="20191206">20191206s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191205" role="tabpanel" aria-labelledby="20191205">20191205s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191204" role="tabpanel" aria-labelledby="20191204">20191204s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191203" role="tabpanel" aria-labelledby="20191203">20191203s
+                    </div>
+                    <div class="tab-pane fade" id="list-20191202" role="tabpanel" aria-labelledby="20191202">20191202s
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script>
+    $(function() {
+        showMarkdown($(".active").attr('aria-controls'));
+    })
+
+    // 点选时各自读取md文件
+    $('a[data-toggle="list"]').on('show.bs.tab', function(e) {
+        $(e.target).animate({
+            paddingLeft: '20%'
+        }, {
+            duration: 800,
+            easing: 'easeOutElastic',
+        });
+        $(e.relatedTarget).animate({
+            paddingLeft: '10%'
+        }, {
+            duration: 800,
+            easing: 'easeOutElastic',
+        });
+        var activeTab = $(e.target).attr('aria-controls');
+        $(".logTitle").html($(e.target).html() + "开发记录");
+        // console.log($('.tab-content div[aria-labelledby="' + activeTab + '"').html("我拿到了！"));
+        // $(e.target).tab('show');
+        showMarkdown(activeTab);
+    })
+    $('a[data-toggle="list"]').on('shown.bs.tab', function(e) {
+        mermaid.init({
+            noteMargin: 10
+        }, ".mermaid");
+    })
+</script>
+<script>
+</script>
+
+
+</html>

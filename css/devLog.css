@@ -1,0 +1,148 @@
+@font-face {
+    font-family: myFont;
+    src: url('../fonts/xiyuan.ttf');
+}
+
+@font-face {
+    font-family: mainTitle;
+    src: url('../fonts/shanghei.ttf');
+}
+
+header {
+    background-image: url(../img/devLog/kitchen2_2.png);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    margin-top: -0.5%;
+}
+
+header.main-bar {
+    position: absolute;
+    vertical-align: middle;
+    /* text-align: right; */
+    /* background-color: rgba(147, 82, 204, 0.747); */
+    padding-top: 1%;
+    /* padding-left: 40%; */
+    width: 55ex;
+    height: 4ex;
+    /* align-items: flex-end; */
+}
+
+header .mainBar a {
+    margin-top: 0.4%;
+    padding-right: 2ex;
+    float: right;
+    color: rgb(230, 230, 230);
+    font-weight: normal;
+    vertical-align: middle;
+    font-family: myFont;
+    /* height: 100%; */
+    font-size: 1vw;
+    text-align: right;
+    font-weight: bold;
+    transition: 0.2s cubic-bezier(.55, 1.75, .55, 1.65);
+}
+
+header .mainBar a:hover {
+    font-size: 1.2vw;
+}
+
+.player {
+    color: white;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    border-radius: 100px;
+    background-color: #FF7070;
+    z-index: 5;
+}
+
+.play {
+    /* background-color: white; */
+    cursor: pointer;
+    margin-top: 9px;
+    margin-left: 14px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid rgb(255, 255, 255);
+    border-bottom: 10px solid transparent;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.445));
+    transition: 0.25s cubic-bezier(.55, 1.75, .55, 1.65);
+}
+
+.play:hover {
+    margin-top: 5px;
+    margin-left: 12px;
+    border-top: 14px solid transparent;
+    border-left: 20px solid rgb(255, 255, 255);
+    border-bottom: 14px solid transparent;
+}
+
+.stop {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    margin-top: 11px;
+    margin-left: 11px;
+    border-top: 8px solid rgb(255, 255, 255);
+    border-left: 8px solid rgb(255, 255, 255);
+    border-bottom: 8px solid rgb(255, 255, 255);
+    border-right: 8px solid rgb(255, 255, 255);
+    /* width: 15px;
+    height: 15px; */
+    /* background-color: white; */
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.445));
+    transition: 0.25s cubic-bezier(.55, 1.75, .55, 1.65);
+}
+
+.stop:hover {
+    margin-top: 9px;
+    margin-left: 9px;
+    border-top: 10px solid rgb(255, 255, 255);
+    border-left: 10px solid rgb(255, 255, 255);
+    border-bottom: 10px solid rgb(255, 255, 255);
+    border-right: 10px solid rgb(255, 255, 255);
+}
+
+.frostedGlass {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.404);
+    padding: 5%;
+    border-radius: 10vw;
+    box-shadow: 0px 5px 20px 5px #000000b7;
+    backdrop-filter: blur(10px)
+}
+
+.mainTitle {
+    color: azure;
+    text-shadow: 0px 5px 8px #00000059;
+    font-size: 8vw;
+    font-family: mainTitle;
+}
+
+.sideBar {
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 0vw 1.2vw 1.2vw 0vw;
+    padding: 6%;
+    margin-top: -10%;
+    box-shadow: 0px 5px 5px 5px #00000041;
+    backdrop-filter: blur(10px)
+}
+
+.list-group-item.active {
+    background-color: rgb(255, 159, 32);
+    border-color: rgb(255, 159, 32);
+}
+
+.logTitle {
+    font-size: 4vw;
+    font-family: mainTitle;
+}
+
+.author {
+    padding-left: 1%;
+    color: darkgray;
+    font-size: 0.8vw;
+}

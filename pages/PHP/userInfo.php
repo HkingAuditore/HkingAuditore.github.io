@@ -27,6 +27,9 @@
 
     <?php
     $account = $_COOKIE["account"];
+    if(empty($account)){
+        Header("Location: ../login.html"); 
+    }
     $conn = mysqli_connect('localhost:3306', 'root', '59951308');
     mysqli_query($conn, "set names utf8");
     $sql = "SELECT *
@@ -74,7 +77,7 @@
                     <a class="nav-link" href="#">个人面板<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">开发日志<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../devLog.html">开发日志<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">关于我们<span class="sr-only">(current)</span></a>

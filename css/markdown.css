@@ -1,0 +1,29 @@
+.markdown-body h1 {
+    color: rgb(54, 54, 54);
+    padding: 20px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    border-bottom: solid rgb(255, 138, 61) 1px;
+    width: 800px;
+}
+
+.markdown-body :not(code)>table td,
+.markdown-body :not(code)>table th {
+    border: solid rgb(255, 169, 143) 1px;
+}
+
+.markdown-body :not(code)>table th {
+    background-color: rgb(255, 239, 221);
+    color: rgb(66, 66, 66);
+}
+
+kbd {
+    background-color: tomato;
+    box-shadow: 1px 1px 3px 0.3px #be5b339a;
+}
+
+blockquote {
+    border-left: solid rgba(255, 121, 31, 0.521) 5px;
+    padding-left: 6px;
+    margin-left: 2em;
+}
