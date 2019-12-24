@@ -27,3 +27,11 @@ blockquote {
     padding-left: 6px;
     margin-left: 2em;
 }
+
+.markdown-body hr {
+    width: 70%;
+    background-color: rgb(255, 145, 0);
+    margin-left: 0;
+    border: none;
+    height: 3px;
+}

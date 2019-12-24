@@ -24,23 +24,24 @@
 
     <script src="../../scripts/audioPlayer.js"></script>
     <!--    <script src="../scripts/cookieProcess.js"></script>-->
-
     <?php
-    $account = $_COOKIE["account"];
-    if(empty($account)){
-        Header("Location: ../login.html"); 
+    if(isset($_COOKIE["account"])){
+        $account = $_COOKIE["account"];
+        $conn = mysqli_connect('localhost:3306', 'root', '59951308');
+        mysqli_query($conn, "set names utf8");
+        $sql = "SELECT *
+                FROM userdata.userinfo
+                WHERE account ='$account';";
+        mysqli_select_db($conn,'userdata');
+        $retval = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_array($retval, MYSQLI_ASSOC);
+        mysqli_free_result($retval);
+        mysqli_close($conn);
+        
+    }else{
+        header("Location: ../login.html");
+        exit();
     }
-    $conn = mysqli_connect('localhost:3306', 'root', '59951308');
-    mysqli_query($conn, "set names utf8");
-    $sql = "SELECT *
-            FROM userdata.userinfo
-            WHERE account ='$account';";
-//    echo $sql;
-    mysqli_select_db($conn, 'userdata');
-    $retval = mysqli_query($conn, $sql);
-    $row = mysqli_fetch_array($retval, MYSQLI_ASSOC);
-    mysqli_free_result($retval);
-    mysqli_close($conn);
     ?>
     <script>
         var userData=
