@@ -147,32 +147,29 @@
             <div class="col-xl-2 col-md-2" style="padding-left: 0; ;">
                 <div class=" sideBar" style="margin-top: -1.8vw;padding-top: 12%;width: 80%">
                     <div class="list-group" id="logList" role="tablist">
-                        <a class="list-group-item list-group-item-action active" id="20191221-list" data-toggle="list" href="#list-20191221" role="tab" aria-controls="20191221">2019年12月21日</a>
-                        <a class="list-group-item list-group-item-action" id="20191220-list" data-toggle="list" href="#list-20191220" role="tab" aria-controls="20191220">2019年12月20日</a>
-                        <a class="list-group-item list-group-item-action" id="20191219-list" data-toggle="list" href="#list-20191219" role="tab" aria-controls="20191219">2019年12月19日</a>
-                        <a class="list-group-item list-group-item-action" id="20191218-list" data-toggle="list" href="#list-20191218" role="tab" aria-controls="20191218">2019年12月18日</a>
-                        <a class="list-group-item list-group-item-action" id="20191217-list" data-toggle="list" href="#list-20191217" role="tab" aria-controls="20191217">2019年12月17日</a>
-                        <a class="list-group-item list-group-item-action" id="20191216-list" data-toggle="list" href="#list-20191216" role="tab" aria-controls="20191216">2019年12月16日</a>
-                        <a class="list-group-item list-group-item-action" id="20191215-list" data-toggle="list" href="#list-20191215" role="tab" aria-controls="20191215">2019年12月15日</a>
-                        <a class="list-group-item list-group-item-action" id="20191214-list" data-toggle="list" href="#list-20191214" role="tab" aria-controls="20191214">2019年12月14日</a>
-                        <a class="list-group-item list-group-item-action" id="20191213-list" data-toggle="list" href="#list-20191213" role="tab" aria-controls="20191213">2019年12月13日</a>
-                        <a class="list-group-item list-group-item-action" id="20191212-list" data-toggle="list" href="#list-20191212" role="tab" aria-controls="20191212">2019年12月12日</a>
-                        <a class="list-group-item list-group-item-action" id="20191211-list" data-toggle="list" href="#list-20191211" role="tab" aria-controls="20191211">2019年12月11日</a>
-                        <a class="list-group-item list-group-item-action" id="20191210-list" data-toggle="list" href="#list-20191210" role="tab" aria-controls="20191210">2019年12月10日</a>
-                        <a class="list-group-item list-group-item-action" id="20191209-list" data-toggle="list" href="#list-20191209" role="tab" aria-controls="20191209">2019年12月09日</a>
-                        <a class="list-group-item list-group-item-action" id="20191208-list" data-toggle="list" href="#list-20191208" role="tab" aria-controls="20191208">2019年12月08日</a>
-                        <a class="list-group-item list-group-item-action" id="20191207-list" data-toggle="list" href="#list-20191207" role="tab" aria-controls="20191207">2019年12月07日</a>
-                        <a class="list-group-item list-group-item-action" id="20191206-list" data-toggle="list" href="#list-20191206" role="tab" aria-controls="20191206">2019年12月06日</a>
-                        <a class="list-group-item list-group-item-action" id="20191205-list" data-toggle="list" href="#list-20191205" role="tab" aria-controls="20191205">2019年12月05日</a>
-                        <a class="list-group-item list-group-item-action" id="20191204-list" data-toggle="list" href="#list-20191204" role="tab" aria-controls="20191204">2019年12月04日</a>
-                        <a class="list-group-item list-group-item-action" id="20191203-list" data-toggle="list" href="#list-20191203" role="tab" aria-controls="20191203">2019年12月03日</a>
-                        <a class="list-group-item list-group-item-action" id="20191202-list" data-toggle="list" href="#list-20191202" role="tab" aria-controls="20191202">2019年12月02日</a>
+                        <?php
+                        $conn = mysqli_connect('localhost:3306', 'root', '59951308');
+                        mysqli_query($conn, "set names utf8");
+                        $sql = "SELECT *
+                        FROM devlogs.logs
+                        ORDER BY logID DESC;";
+                        mysqli_select_db($conn,'devlogs');
+                        $retval = mysqli_query($conn, $sql);
+                        $row = mysqli_fetch_array($retval, MYSQLI_ASSOC);
+                        echo "<a class=\"list-group-item list-group-item-action active\" id=\"" .$row["logID"]."-list\" data-toggle=\"list\" href=\"#list-".$row["logID"]."\" role=\"tab\" aria-controls=\"".$row["logID"]."\">".$row["logName"]."</a>";
+                        while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
+                            echo "<a class=\"list-group-item list-group-item-action\" id=\"" .$row["logID"]."-list\" data-toggle=\"list\" href=\"#list-".$row["logID"]."\" role=\"tab\" aria-controls=\"".$row["logID"]."\">".$row["logName"]."</a>";
+                        }
+
+//                        mysqli_free_result($retval);
+//                        mysqli_close($conn);
+                        ?>
                     </div>
                 </div>
             </div>
             <div class="col-xl-10 col-md-10" style="padding-top: 3%;">
                 <div class=" logTitle">
-                    2019年12月21日开发记录
+                    日志
                 </div>
                 <hr>
                 <div class=" author">
@@ -184,45 +181,61 @@
 
 
                 <div class="tab-content markdown-body" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-20191221" role="tabpanel" aria-labelledby="20191221">20191221</div>
-                    <div class="tab-pane fade" id="list-20191220" role="tabpanel" aria-labelledby="20191220">20191220
-                    </div>
-                    <div class="tab-pane fade" id="list-20191219" role="tabpanel" aria-labelledby="20191219">20191219s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191218" role="tabpanel" aria-labelledby="20191218">20191218s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191217" role="tabpanel" aria-labelledby="20191217">20191217s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191216" role="tabpanel" aria-labelledby="20191216">20191216s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191215" role="tabpanel" aria-labelledby="20191215">20191215s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191214" role="tabpanel" aria-labelledby="20191214">20191214s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191213" role="tabpanel" aria-labelledby="20191213">20191213s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191212" role="tabpanel" aria-labelledby="20191212">20191212s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191211" role="tabpanel" aria-labelledby="20191211">20191211s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191210" role="tabpanel" aria-labelledby="20191210">20191210s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191209" role="tabpanel" aria-labelledby="20191209">20191209s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191208" role="tabpanel" aria-labelledby="20191208">20191208s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191207" role="tabpanel" aria-labelledby="20191207">20191207s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191206" role="tabpanel" aria-labelledby="20191206">20191206s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191205" role="tabpanel" aria-labelledby="20191205">20191205s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191204" role="tabpanel" aria-labelledby="20191204">20191204s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191203" role="tabpanel" aria-labelledby="20191203">20191203s
-                    </div>
-                    <div class="tab-pane fade" id="list-20191202" role="tabpanel" aria-labelledby="20191202">20191202s
-                    </div>
+                    <?php
+                    $sql = "SELECT *
+                        FROM devlogs.logs
+                        ORDER BY logID DESC;";
+                    mysqli_select_db($conn,'devlogs');
+                    $retval = mysqli_query($conn, $sql);
+                    $row = mysqli_fetch_array($retval, MYSQLI_ASSOC);
+                    echo "<div class=\"tab-pane fade show active\" id=\"list-".$row["logID"]."\" role=\"tabpanel\" aria-labelledby=\"".$row["logID"]."\">".$row["logID"]."</div>";
+                    while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
+                        echo "<div class=\"tab-pane fade show\" id=\"list-".$row["logID"]."\" role=\"tabpanel\" aria-labelledby=\"".$row["logID"]."\">".$row["logID"]."</div>";
+                    }
+
+                    mysqli_free_result($retval);
+                    mysqli_close($conn);
+
+                    ?>
+<!--                    <div class="tab-pane fade show active" id="list-20191221" role="tabpanel" aria-labelledby="20191221">20191221</div>-->
+<!--                    <div class="tab-pane fade" id="list-20191220" role="tabpanel" aria-labelledby="20191220">20191220-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191219" role="tabpanel" aria-labelledby="20191219">20191219s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191218" role="tabpanel" aria-labelledby="20191218">20191218s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191217" role="tabpanel" aria-labelledby="20191217">20191217s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191216" role="tabpanel" aria-labelledby="20191216">20191216s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191215" role="tabpanel" aria-labelledby="20191215">20191215s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191214" role="tabpanel" aria-labelledby="20191214">20191214s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191213" role="tabpanel" aria-labelledby="20191213">20191213s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191212" role="tabpanel" aria-labelledby="20191212">20191212s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191211" role="tabpanel" aria-labelledby="20191211">20191211s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191210" role="tabpanel" aria-labelledby="20191210">20191210s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191209" role="tabpanel" aria-labelledby="20191209">20191209s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191208" role="tabpanel" aria-labelledby="20191208">20191208s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191207" role="tabpanel" aria-labelledby="20191207">20191207s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191206" role="tabpanel" aria-labelledby="20191206">20191206s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191205" role="tabpanel" aria-labelledby="20191205">20191205s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191204" role="tabpanel" aria-labelledby="20191204">20191204s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191203" role="tabpanel" aria-labelledby="20191203">20191203s-->
+<!--                    </div>-->
+<!--                    <div class="tab-pane fade" id="list-20191202" role="tabpanel" aria-labelledby="20191202">20191202s-->
+<!--                    </div>-->
                 </div>
             </div>
 
@@ -254,7 +267,7 @@
             easing: 'easeOutElastic',
         });
         var activeTab = $(e.target).attr('aria-controls');
-        $(".logTitle").html($(e.target).html() + "开发记录");
+        $(".logTitle").html($(e.target).html());
         $('html, body').animate({
                 scrollTop: $('#devLogs').offset().top
             }, 300)

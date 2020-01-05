@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="509bd23f-25bc-4319-9094-26339abcfbd9" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/markdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/markdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devLogs/20191218.md" beforeDir="false" afterPath="$PROJECT_DIR$/devLogs/20191218.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/PHP/loginManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/loginManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/PHP/registerManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/registerManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/PHP/userInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/userInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/devLog.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/devLog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/userInfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +47,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="userdata: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="userdata: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="userinfo: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -221,6 +216,9 @@
       <workItem from="1576491672460" duration="10022000" />
       <workItem from="1576546926872" duration="825000" />
       <workItem from="1577178968229" duration="466000" />
+      <workItem from="1578036746318" duration="873000" />
+      <workItem from="1578146887998" duration="1262000" />
+      <workItem from="1578206646578" duration="3641000" />
     </task>
     <servers />
   </component>
@@ -244,6 +242,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="168" key="#Notifications" timestamp="1578207442226">
+      <screen x="1920" y="-10" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="168" key="#Notifications/0.0.1920.1040/1920.-10.1920.1040@1920.-10.1920.1040" timestamp="1578207442226" />
     <state x="654" y="83" width="616" height="873" key="#PHP" timestamp="1576411405965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -253,13 +255,15 @@
     </state>
     <state x="552" y="178" key="#SQL_方言/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576415117952" />
     <state x="2472" y="168" key="#SQL_方言/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1576494346475" />
-    <state x="371" y="356" key="#SQL_解析作用域" timestamp="1576404733716">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2291" y="346" key="#SQL_解析作用域" timestamp="1578207411303">
+      <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
+    <state x="2291" y="346" key="#SQL_解析作用域/0.0.1920.1040/1920.-10.1920.1040@1920.-10.1920.1040" timestamp="1578207411303" />
     <state x="371" y="356" key="#SQL_解析作用域/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576404733716" />
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576411112035">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2472" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578207541578">
+      <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
+    <state x="2472" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.-10.1920.1040@1920.-10.1920.1040" timestamp="1578207541578" />
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411112035" />
     <state x="2216" y="424" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1575546740532">
       <screen x="1920" y="-10" width="1920" height="1040" />
@@ -274,17 +278,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="673" y="211" key="#index.php/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576403053455" />
-    <state width="251" height="195" key="DatabaseViewActions_Filter" timestamp="1576411213040">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="251" height="195" key="DatabaseViewActions_Filter" timestamp="1578207469859">
+      <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
+    <state width="251" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040/1920.-10.1920.1040@1920.-10.1920.1040" timestamp="1578207469859" />
     <state width="251" height="195" key="DatabaseViewActions_Filter/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411213040" />
     <state width="526" height="618" key="DebuggerActiveHint" timestamp="1575543986253">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
     <state width="526" height="618" key="DebuggerActiveHint/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575543986253" />
-    <state x="2800" y="346" key="FileChooserDialogImpl" timestamp="1575546737492">
+    <state x="2800" y="346" key="FileChooserDialogImpl" timestamp="1578207286125">
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
+    <state x="2800" y="346" key="FileChooserDialogImpl/0.0.1920.1040/1920.-10.1920.1040@1920.-10.1920.1040" timestamp="1578207286125" />
     <state x="2800" y="346" key="FileChooserDialogImpl/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575546737492" />
     <state width="1293" height="91" key="GridCell.Tab.0.bottom" timestamp="1576492649945">
       <screen x="1920" y="-10" width="1920" height="1040" />
@@ -320,9 +326,10 @@
     </state>
     <state x="469" y="224" width="1149" height="709" key="SettingsEditor/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576472632031" />
     <state x="336" y="266" width="1231" height="728" key="SettingsEditor/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1575642827475" />
-    <state width="200" height="523" key="SqlResolveConfigurable" timestamp="1576414973735">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="200" height="523" key="SqlResolveConfigurable" timestamp="1578207411206">
+      <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
+    <state width="200" height="523" key="SqlResolveConfigurable/0.0.1920.1040/1920.-10.1920.1040@1920.-10.1920.1040" timestamp="1578207411206" />
     <state width="200" height="523" key="SqlResolveConfigurable/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576414973735" />
     <state x="676" y="160" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1576411331355">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -332,10 +339,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="822" y="217" key="com.intellij.database.view.ui.DbObjectDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411828853" />
-    <state x="645" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1577178970520">
+    <state x="645" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578206660044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="645" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.-10.1920.1040@0.0.1920.1040" timestamp="1577178970520" />
+    <state x="645" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.-10.1920.1040@0.0.1920.1040" timestamp="1578206660044" />
     <state x="645" y="343" key="com.intellij.ide.util.TipDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576472546620" />
     <state x="1920" y="-10" width="800" height="1028" maximized="true" key="dock-window-1" timestamp="1576415543016">
       <screen x="1920" y="-10" width="1920" height="1040" />
