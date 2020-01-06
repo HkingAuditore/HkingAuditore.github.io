@@ -197,45 +197,6 @@
                     mysqli_close($conn);
 
                     ?>
-<!--                    <div class="tab-pane fade show active" id="list-20191221" role="tabpanel" aria-labelledby="20191221">20191221</div>-->
-<!--                    <div class="tab-pane fade" id="list-20191220" role="tabpanel" aria-labelledby="20191220">20191220-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191219" role="tabpanel" aria-labelledby="20191219">20191219s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191218" role="tabpanel" aria-labelledby="20191218">20191218s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191217" role="tabpanel" aria-labelledby="20191217">20191217s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191216" role="tabpanel" aria-labelledby="20191216">20191216s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191215" role="tabpanel" aria-labelledby="20191215">20191215s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191214" role="tabpanel" aria-labelledby="20191214">20191214s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191213" role="tabpanel" aria-labelledby="20191213">20191213s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191212" role="tabpanel" aria-labelledby="20191212">20191212s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191211" role="tabpanel" aria-labelledby="20191211">20191211s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191210" role="tabpanel" aria-labelledby="20191210">20191210s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191209" role="tabpanel" aria-labelledby="20191209">20191209s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191208" role="tabpanel" aria-labelledby="20191208">20191208s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191207" role="tabpanel" aria-labelledby="20191207">20191207s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191206" role="tabpanel" aria-labelledby="20191206">20191206s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191205" role="tabpanel" aria-labelledby="20191205">20191205s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191204" role="tabpanel" aria-labelledby="20191204">20191204s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191203" role="tabpanel" aria-labelledby="20191203">20191203s-->
-<!--                    </div>-->
-<!--                    <div class="tab-pane fade" id="list-20191202" role="tabpanel" aria-labelledby="20191202">20191202s-->
-<!--                    </div>-->
                 </div>
             </div>
 

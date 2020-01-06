@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newbie's Kitchen</title>
+
+    <link href="../img/icon.ico" rel="icon" type="image/x-ico" />
+    <!--    <link rel="shortcut icon" href=" WebGL/TemplateData/favicon.ico">-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/core.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/language/zh_CN.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <link href="../css/art.css" rel="stylesheet" />
+    <script src="../scripts/indexJS.js"></script>
+    <script src="../scripts/audioPlayer.js"></script>
+
+
+
+
+    <!-- <link href="../css/markdown.css" rel="stylesheet"> -->
+    <!-- <link href="../plugin/highLight/styles/atom-one-dark-reasonable.css" rel="stylesheet"> -->
+    <!-- <script src="../plugin/highLight/highlight.pack.js"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.js"></script> -->
+</head>
+
+
+<header style="height: 51vw;">
+
+    <div class="container-fluid">
+        <div class="row" style="height: 2vw;">
+            <div class="col-1">
+                <a href="../index.html">
+                    <img src="../img/logo.png" style="position:absolute;
+                            margin-left: 0.8%; margin-top: 1vw;" width="100px" />
+                </a>
+            </div>
+            <div class="col-8 offset-4">
+                <div align="right" class="mainBar" style="margin-top: 1vw;">
+                    <a href="PHP/userInfo.php" style="text-decoration: none;">个人面板</a>
+                    <a href="" style="text-decoration: none;">线上预览</a>
+                    <a href="" style="text-decoration: none;">预购/捐赠</a>
+                    <a href="#" style="text-decoration: none;">开发日志</a>
+                    <div class="player" style="float:right;margin-right:
+                            3%;margin-top: -0.1%;">
+                        <div class="play" id="player" onclick="Player()">
+                            <audio id="BGM" loop="" preload="">
+                                <source src="../music/做菜2无损完整 (1).mp3" />
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10%;overflow: hidden;padding-bottom: 10%;padding-top: 10%;">
+            <div class="col-12" style="margin-left: 55%;">
+                <div style="width:75%;">
+                    <h1 class="frostedGlass mainTitle">
+                        <span style="margin-left: 8%;">
+                            艺术设定
+                        </span>
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<body>
+
+    <div class="container-fluid" id="devLogs">
+        <div class="row" style="padding-bottom: 5%;">
+            <div class="col-xl-10 col-md-10" style="padding-top: 3%;padding-left: 20%;">
+                <div class=" logTitle">
+                    人物
+                </div>
+                <hr>
+                <div class=" author">
+                    注释注释注释注释注释注释
+                </div>
+                <hr>
+            </div>
+
+        </div>
+        <div class="row" style="margin-top: -5%;">
+            <div class=" col-6" style="margin-bottom: 50%;">
+                <img src="../img/art/0.png" width="55%" class=" charaImg" style="margin-left: 30%;">
+            </div>
+
+            <div class=" col-5" style="margin-left: -10%; ">
+                <div class="row" style="margin-top: 30%;">
+                    <div class=" col-12">
+                        <div class=" characterName">
+                            <span>
+                             名字
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row" style="margin-top: -40%;">
+                    <div class=" col-12">
+                        <div class=" characterInfo">
+                            人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息 人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息 人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class=" col-5 offset-2" style="margin-top: 10%;">
+                <div class="row">
+                    <div class=" col-12 ">
+                        <div class=" characterName " style="text-align: right;">
+                            <span>
+                             名字
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row " style="margin-top: -40%; ">
+                    <div class=" col-12 ">
+                        <div class=" characterInfo " style="text-align: right;">
+                            人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息 人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息 人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class=" col-6 " style="margin-left: -15%; margin-bottom: 50%;margin-bottom: 50%;">
+                <img src="../img/art/0 (2).png " width="55% " class=" charaImg" style="margin-left: 30%;">
+
+            </div>
+
+        </div>
+        <div class="row" style="margin-top: -5%;">
+            <div class=" col-6" style="margin-bottom: 50%;">
+                <img src="../img/art/0 (1).png" width="55%" class=" charaImg" style="margin-left: 30%;">
+            </div>
+
+            <div class=" col-5" style="margin-left: -10%; ">
+                <div class="row" style="margin-top: 30%;">
+                    <div class=" col-12">
+                        <div class=" characterName">
+                            <span>
+                             名字
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row" style="margin-top: -40%;">
+                    <div class=" col-12">
+                        <div class=" characterInfo">
+                            人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息 人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息 人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class=" col-5 offset-2" style="margin-top: 10%;">
+                <div class="row">
+                    <div class=" col-12 ">
+                        <div class=" characterName " style="text-align: right;">
+                            <span>
+                             名字
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row " style="margin-top: -40%; ">
+                    <div class=" col-12 ">
+                        <div class=" characterInfo " style="text-align: right;">
+                            人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息 人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息 人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息人物信息
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class=" col-6 " style="margin-left: -15%; margin-bottom: 50%;margin-bottom: 50%;">
+                <img src="../img/art/0 (3).png " width="45% " class=" charaImg" style="margin-left: 30%;">
+
+            </div>
+
+        </div>
+        <div class="row" style="margin-top: 10%;margin-bottom: 10%;">
+            <div class=" col-12 " style="text-align: center;">
+                <img src="../img/art/n.jpg " width="70% " class=" painting" style="">
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+
+
+</html>
