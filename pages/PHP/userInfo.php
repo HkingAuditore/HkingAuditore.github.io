@@ -24,7 +24,7 @@
 
     <script src="../../scripts/audioPlayer.js"></script>
     <!--    <script src="../scripts/cookieProcess.js"></script>-->
-    <?php
+    <?php 
     if(isset($_COOKIE["account"])){
         $account = $_COOKIE["account"];
         $conn = mysqli_connect('localhost:3306', 'root', '59951308');

@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="509bd23f-25bc-4319-9094-26339abcfbd9" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devLogs/20191218.md" beforeDir="false" afterPath="$PROJECT_DIR$/devLogs/20191218.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/PHP/loginManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/loginManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/PHP/registerManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/registerManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/PHP/userInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/userInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/devLog.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/devLog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/userInfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,6 +210,7 @@
       <workItem from="1578036746318" duration="873000" />
       <workItem from="1578146887998" duration="1262000" />
       <workItem from="1578206646578" duration="3641000" />
+      <workItem from="1578377936145" duration="6618000" />
     </task>
     <servers />
   </component>
@@ -339,10 +331,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="822" y="217" key="com.intellij.database.view.ui.DbObjectDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411828853" />
-    <state x="645" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578206660044">
+    <state x="645" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578377936446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="645" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.-10.1920.1040@0.0.1920.1040" timestamp="1578206660044" />
+    <state x="645" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578377936446" />
     <state x="645" y="343" key="com.intellij.ide.util.TipDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576472546620" />
     <state x="1920" y="-10" width="800" height="1028" maximized="true" key="dock-window-1" timestamp="1576415543016">
       <screen x="1920" y="-10" width="1920" height="1040" />
@@ -353,6 +346,14 @@
     </state>
     <state x="2155" y="-10" width="800" height="1028" key="dock-window-2/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576415916320" />
     <state x="2155" y="-10" width="800" height="1028" key="dock-window-2/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1576471539418" />
+    <state x="1208" y="136" width="652" height="774" key="find.popup" timestamp="1578384495513">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1208" y="136" width="652" height="774" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578384495513" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1578383377381">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578383377381" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
