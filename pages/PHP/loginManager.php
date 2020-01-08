@@ -32,25 +32,6 @@ mysqli_query($conn, "set names utf8");
     <script src="../../../scripts/audioPlayer.js"></script>
 
     <script src="../scripts/registerManager.js"></script>
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict';
-            window.addEventListener('load', function () {
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
 </head>
 
 <header>
@@ -62,10 +43,10 @@ mysqli_query($conn, "set names utf8");
     </a>
 
     <div align="right" class="mainBar" style="float: right;right: 0;width: 1300px;margin-top: 1vw;margin-right: 1vw;">
-    <a class=" toolbar" href="PHP/userInfo.php" style="text-decoration: none;">个人面板</a>
-        <a class=" toolbar" href="" style="text-decoration: none;">线上预览</a>
-        <a class=" toolbar" href="" style="text-decoration: none;">预购/捐赠</a>
-        <a class=" toolbar" href="../devLog.php" style="text-decoration: none;">开发日志</a>
+    <a class=" toolbar"      href="userInfo.php" style="text-decoration: none;">个人面板</a>
+        <a class=" toolbar"  href="" style="text-decoration: none;">线上预览</a>
+        <a class=" toolbar"  href="" style="text-decoration: none;">预购/捐赠</a>
+        <a class=" toolbar"  href="../devLog.php" style="text-decoration: none;">开发日志</a>
         <div class="player" style="float:right;margin-right: 3%;margin-top: -0.1%;">
             <div class="play" id="player" onclick="Player()">
                 <audio id="BGM" loop="" preload="">

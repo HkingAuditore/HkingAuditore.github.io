@@ -118,7 +118,7 @@ mysqli_close($conn);
     </a>
 
     <div align="right" class="mainBar" style="float: right;right: 0;width: 1300px;margin-top: 1vw;margin-right: 1vw;">
-    <a class=" toolbar" href="userInfo.php" style="text-decoration: none;">个人面板</a>
+    <a class=" toolbar"     href="userInfo.php" style="text-decoration: none;">个人面板</a>
         <a class=" toolbar" href="" style="text-decoration: none;">线上预览</a>
         <a class=" toolbar" href="" style="text-decoration: none;">预购/捐赠</a>
         <a class=" toolbar" href="../devLog.php" style="text-decoration: none;">开发日志</a>

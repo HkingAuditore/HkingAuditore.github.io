@@ -25,7 +25,9 @@
     <script src="../../scripts/audioPlayer.js"></script>
     <!--    <script src="../scripts/cookieProcess.js"></script>-->
     <?php 
-    if(isset($_COOKIE["account"])){
+    echo "<script>console.log(\"is:".$_COOKIE["account"]."\");</script>";
+    if(isset($_COOKIE["account"]) && !($_COOKIE["account"] === "null")){
+        echo "<script>console.log(\"is:".$_COOKIE["account"]."\");</script>";
         $account = $_COOKIE["account"];
         $conn = mysqli_connect('localhost:3306', 'root', '59951308');
         mysqli_query($conn, "set names utf8");
@@ -37,8 +39,8 @@
         $row = mysqli_fetch_array($retval, MYSQLI_ASSOC);
         mysqli_free_result($retval);
         mysqli_close($conn);
-        
     }else{
+        echo "<script>console.log(\"is:".$_COOKIE["account"]."\");</script>";
         header("Location: ../login.html");
         exit();
     }
@@ -81,8 +83,12 @@
                     <a class="nav-link" href="../devLog.php">开发日志<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">关于我们<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="message.php">留言板<span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../art.html">艺术设定<span class="sr-only">(current)</span></a>
+                </li>
+
             </ul>
         </div>
     </nav>
@@ -127,6 +133,11 @@
                  style="box-shadow: 2px 2px 10px 3px rgba(0,0,0,0); border:1px solid rgba(83,82,80,0.42);width: 60%">
                 <div class="col">
                     <h6>你<span id="enable"></span>允许我们发送邮件。</h6>
+                </div>
+            </div>
+            <div class="row" style="margin-top:50% ">
+                <div class="col-6">
+                    <button id="exit" class="btn custom-confirm-btn" >退出登录</button>
                 </div>
             </div>
         </div>
@@ -191,5 +202,13 @@
 
 </div>
 </body>
+<script>
+    $("#exit").click(function(){
+        $.removeCookie('account');
+        console.log("delete!");
+        window.location.reload();
+    })
 
+
+</script>
 </html>

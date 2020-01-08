@@ -109,10 +109,10 @@
             </div>
             <div class="col-8 offset-4">
                 <div align="right" class="mainBar" style="margin-top: 1vw;">
-                    <a href="PHP/userInfo.php" style="text-decoration: none;">个人面板</a>
-                    <a href="" style="text-decoration: none;">线上预览</a>
-                    <a href="" style="text-decoration: none;">预购/捐赠</a>
-                    <a href="#" style="text-decoration: none;">开发日志</a>
+                    <a href="userInfo.php" style="text-decoration: none;">个人面板</a>
+                    <a href="../art.html" style="text-decoration: none;">艺术设定</a>
+                    <a href="message.php" style="text-decoration: none;">留言板</a>
+                    <a href="../devLog.php" style="text-decoration: none;">开发日志</a>
                     <div class="player" style="float:right;margin-right:
                             3%;margin-top: -0.1%;">
                         <div class="play" id="player" onclick="Player()">
@@ -134,7 +134,7 @@
                     </h1>
                 </div>
             </div>
-
+            
         </div>
     </div>
 </header>
@@ -184,18 +184,33 @@
     mysqli_close($conn);
 
     ?>
-
-    <div class="row text-area">
-        <div class=" col-12">
-            <form class="needs-validation" action id="form-message" method="post" name="messageForm">
-                <div class=" form-group">
-                    <label for="message_sent1">留言:</label>
-                    <textarea class="form-control" id="message_sent" name="message_sent" rows="3" required></textarea>
+    <?PHP
+    if(isset($_COOKIE["account"]) && !($_COOKIE["account"] === "null")) {
+            echo "    <form class=\"needs-validation\" action id=\"form-message\" method=\"post\" name=\"messageForm\">
+            <div class=\" form-group\">   
+                <div class=\"row text-area\">
+                    <div class=\" col-12\">              
+                        <label for=\"message_sent1\">留言:</label>
+                        <textarea class=\"form-control\" id=\"message_sent\" name=\"message_sent\" rows=\"3\" required></textarea>    
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">发送</button>
-            </form>
-        </div>
-    </div>
+                <div class=\" row\">
+                    <div class=\" col-2 offset-8\" style=\"padding-left: 2%;padding-right:4%\">
+                        <button type=\"submit\" class=\"btn custom-confirm-btn\">发送</button>
+                    </div>
+                </div>
+            </div>
+        </form>";
+    }else{
+        echo "<div class=\"row\" style=\"padding-top:5%;padding-bottom:5%;\">
+            <div class=' col-12' style='padding-left:20%;padding-right:20%;text-align: center' >
+            <div class=\"alert alert-warning\" role=\"alert\"> 
+                <a href='../login.html'>登录</a> 后可留言!
+            </div>
+            </div>
+            </div>";
+    }
+    ?>
 </div>
 </body>
 
