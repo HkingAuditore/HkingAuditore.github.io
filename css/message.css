@@ -156,7 +156,10 @@ header .mainBar a:hover {
     text-align: right;
 }
 
-.user-name {}
+.user-name {
+    font-size: 1.05em;
+    font-weight: bold;
+}
 
 .date {
     padding-right: 10%;
@@ -164,7 +167,10 @@ header .mainBar a:hover {
     color: rgb(170, 170, 170);
 }
 
-.message-content {}
+.message-content {
+    margin-top: 0.52%;
+    padding-right: 8%;
+}
 
 .message-inside {
     margin-top: 2%;

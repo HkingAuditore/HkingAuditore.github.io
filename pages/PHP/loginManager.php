@@ -16,7 +16,7 @@ mysqli_query($conn, "set names utf8");
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Newbie's Kitchen</title>
-    <link href="../../../img/icon.ico" rel="icon" type="/image/x-ico"/>
+    <link href="../../../3img/icon.ico" rel="icon" type="/image/x-ico"/>
 
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.css" rel="stylesheet">
@@ -88,7 +88,7 @@ mysqli_query($conn, "set names utf8");
                             $retval = mysqli_query($conn, $sql);
                             $row = mysqli_fetch_array($retval, MYSQLI_ASSOC);
                             if ($row['pwd'] == $pwd) {
-                                setcookie("account", $account, time() + 60 * 60 * 24 * 30);
+                                setcookie("account", $account, time() + 60 * 60 * 24 * 30,'/');
                                 echo "<h1>登录成功！稍后自动跳转到个人信息页面</h1>
                                         <script>
                                             var target = \"window.location='userInfo.php'\";

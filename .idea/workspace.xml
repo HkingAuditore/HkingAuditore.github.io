@@ -3,18 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="509bd23f-25bc-4319-9094-26339abcfbd9" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/devLog.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/devLog.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/message.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/PHP/loginManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/loginManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/PHP/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/PHP/registerManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/registerManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/PHP/userInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/PHP/userInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/art.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/art.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/devLog.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/devLog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/devLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/devLog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/userInfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +147,7 @@
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.register.html" />
       <item itemvalue="JavaScript Debug.userInfo.html" />
+      <item itemvalue="PHP Script.index.php" />
     </list>
     <recent_temporary>
       <list>
@@ -222,6 +220,7 @@
       <workItem from="1578206646578" duration="3641000" />
       <workItem from="1578377936145" duration="6889000" />
       <workItem from="1578492807333" duration="2519000" />
+      <workItem from="1578533887611" duration="8789000" />
     </task>
     <servers />
   </component>
@@ -342,10 +341,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="822" y="217" key="com.intellij.database.view.ui.DbObjectDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576411828853" />
-    <state x="645" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578492808659">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2565" y="333" key="com.intellij.ide.util.TipDialog" timestamp="1578533926476">
+      <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
     <state x="645" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.-10.1920.1040@0.0.1920.1040" timestamp="1578492808659" />
+    <state x="2565" y="333" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.-10.1920.1040@1920.-10.1920.1040" timestamp="1578533926476" />
     <state x="645" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578377936446" />
     <state x="645" y="343" key="com.intellij.ide.util.TipDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576472546620" />
     <state x="1920" y="-10" width="800" height="1028" maximized="true" key="dock-window-1" timestamp="1576415543016">

@@ -25,7 +25,8 @@
     <script src="../../scripts/audioPlayer.js"></script>
     <!--    <script src="../scripts/cookieProcess.js"></script>-->
     <?php 
-    echo "<script>console.log(\"is:".$_COOKIE["account"]."\");</script>";
+    echo "<script>console.log(\"isPHP:".$_COOKIE["account"]."\");</script>";
+    echo "<script>console.log(\"isJQ:\"+$.cookie('account'));</script>";
     if(isset($_COOKIE["account"]) && !($_COOKIE["account"] === "null")){
         echo "<script>console.log(\"is:".$_COOKIE["account"]."\");</script>";
         $account = $_COOKIE["account"];
@@ -204,11 +205,11 @@
 </body>
 <script>
     $("#exit").click(function(){
-        $.removeCookie('account');
+        console.log($.cookie('account'));
+        $.removeCookie('account',{path:'/'});
         console.log("delete!");
         window.location.reload();
     })
-
-
+    console.log("isJQ00:"+$.cookie('account'));
 </script>
 </html>

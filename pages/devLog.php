@@ -27,6 +27,7 @@
     <link href="../css/devLog.css" rel="stylesheet" />
     <script src="../scripts/indexJS.js"></script>
     <script src="../scripts/audioPlayer.js"></script>
+    <script src="../scripts/jquery.cookie.js"></script>
 
     <!-- <script src="../plugin/showdown-1.9.1/dist/showdown.js"></script> -->
     <script src="../scripts/marked.js"></script>
@@ -110,7 +111,7 @@
             </div>
             <div class="col-8 offset-4">
                 <div align="right" class="mainBar" style="margin-top: 1vw;">
-                    <a href="PHP/userInfo.php" style="text-decoration: none;">个人面板</a>
+                    <a href="PHP/userInfo.php" style="text-decoration: none;" id="panel">个人面板</a>
                     <a href="art.html" style="text-decoration: none;">艺术设定</a>
                     <a href="PHP/message.php" style="text-decoration: none;">留言板</a>
                     <a href="devLog.php" style="text-decoration: none;">开发日志</a>
@@ -168,8 +169,8 @@
                 </div>
             </div>
             <div class="col-xl-10 col-md-10" style="padding-top: 3%;">
-                <div class=" logTitle">
-                    日志
+                <div id="logTitle" class=" logTitle">
+                    最新日志
                 </div>
                 <hr>
                 <div class=" author">
@@ -209,6 +210,7 @@
 
 </body>
 <script>
+    var activeTab=$(".active").attr('aria-controls');
     $(function() {
         showMarkdown($(".active").attr('aria-controls'));
     })
@@ -227,7 +229,7 @@
             duration: 800,
             easing: 'easeOutElastic',
         });
-        var activeTab = $(e.target).attr('aria-controls');
+        activeTab = $(e.target).attr('aria-controls');
         $(".logTitle").html($(e.target).html());
         $('html, body').animate({
                 scrollTop: $('#devLogs').offset().top
@@ -235,14 +237,23 @@
             // console.log($('.tab-content div[aria-labelledby="' + activeTab + '"').html("我拿到了！"));
             // $(e.target).tab('show');
         showMarkdown(activeTab);
-    })
+    });
     $('a[data-toggle="list"]').on('shown.bs.tab', function(e) {
         mermaid.init({
             noteMargin: 10
         }, ".mermaid");
+    });
+    $("#logTitle").click(function () {
+        var url = "devlogShow.html?log="+activeTab+"&name="+encodeURI(encodeURI($("#logList>.active").text()));
+        console.log(url);
+        window.location.href = url;
+    });
+    $(function() {
+        console.log($.cookie('account'));
+        if ($.cookie('account') == undefined) {
+            $("#panel").text("登录");
+        }
     })
-</script>
-<script>
 </script>
 
 

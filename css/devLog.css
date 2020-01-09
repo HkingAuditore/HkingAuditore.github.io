@@ -139,10 +139,31 @@ header .mainBar a:hover {
 .logTitle {
     font-size: 15ex;
     font-family: mainTitle;
+    cursor: pointer;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
 }
+
+
+/*.logTitle:hover{*/
+
+
+/*    cursor: pointer;*/
+
+
+/*}*/
 
 .author {
     padding-left: 1%;
     color: darkgray;
     font-size: 0.8vw;
+}
+
+#logTitle a {
+    color: rgb(255, 167, 35);
+}
+
+#logTitle a:hover {
+    text-decoration: none;
 }

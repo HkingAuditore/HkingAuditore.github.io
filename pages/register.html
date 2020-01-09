@@ -18,6 +18,7 @@
     <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
     <link rel="stylesheet" href="../css/registerCSS.css">
     <script src="../scripts/audioPlayer.js"></script>
+    <script src="../../scripts/jquery.cookie.js"></script>
     <script>
         $(document).ready(function() {
             bsCustomFileInput.init()
@@ -54,10 +55,10 @@
     </a>
 
     <div align="right" class="mainBar" style="float: right;right: 0;width: 1300px;margin-top: 1vw;margin-right: 1vw;">
-        <a class=" toolbar"  href="PHP/userInfo.php" style="text-decoration: none;">个人面板</a>
-        <a class=" toolbar"  href="art.html" style="text-decoration: none;">艺术设定</a>
-        <a class=" toolbar"  href="PHP/message.php" style="text-decoration: none;">留言板</a>
-        <a class=" toolbar"  href="devLog.php" style="text-decoration: none;">开发日志</a>
+        <a class=" toolbar" href="PHP/userInfo.php" style="text-decoration: none;">个人面板</a>
+        <a class=" toolbar" href="art.html" style="text-decoration: none;">艺术设定</a>
+        <a class=" toolbar" href="PHP/message.php" style="text-decoration: none;">留言板</a>
+        <a class=" toolbar" href="devLog.php" style="text-decoration: none;">开发日志</a>
         <div class="player" style="float:right;margin-right: 3%;margin-top: -0.1%;">
             <div class="play" id="player" onclick="Player()">
                 <audio id="BGM" loop="" preload="">
@@ -367,7 +368,16 @@
             } else {
                 input.setCustomValidity('');
             }
-        }
+        };
+        $(function() {
+            console.log($.cookie('account'));
+            if ($.cookie('account') != undefined) {
+                $(location).attr('href', 'PHP/userInfo.php');
+
+            } else {
+                $("#panel").text("登录");
+            }
+        })
     </script>
 </body>
 

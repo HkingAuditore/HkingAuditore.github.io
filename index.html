@@ -30,6 +30,8 @@
     <script src="WebGL/Build/UnityLoader.js"></script>
     <script src="scripts/indexJS.js"></script>
     <script src="scripts/audioPlayer.js"></script>
+    <script src="../../scripts/jquery.cookie.js"></script>
+
 
     <script>
         var unityInstance = UnityLoader.instantiate("unityContainer", "WebGL/Build/12-17.json", {
@@ -51,7 +53,7 @@
             </div>
             <div class="col-7">
                 <div align="right" class="mainBar" style="margin-top: 1vw;">
-                    <a href="pages/PHP/userInfo.php" style="text-decoration: none;">个人面板</a>
+                    <a href="pages/PHP/userInfo.php" style="text-decoration: none;" id="panel">个人面板</a>
                     <a href="pages/art.html" style="text-decoration: none;">艺术设定</a>
                     <a href="pages/PHP/message.php" style="text-decoration: none;">留言板</a>
                     <a href="pages/devLog.php" style="text-decoration: none;">开发日志</a>
@@ -187,13 +189,18 @@
                             <div class="col-6">
                                 <h2 style="text-align: left;color: rgb(145,
                                         89, 6);font-size: 4vw;">
-                                    高自由度的世界
+                                    高自由度的玩法
                                 </h2>
                                 <p class="normal">
-                                    示例文字例文字示例文字示例文字。
-                                    <br /> 示例文字示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。 <br /> 示例文字示例。 <br /> 示例文字示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。
-                                    <br /> 示例文字示例。 <br /> 示例文字示例文字示例文字示例文字示例文字。
-                                    <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。 <br /> 示例文字示例。
+                                    在游戏世界中自由探索，搜索各式各样的珍奇食材。<br/> 尽情享受成千上万种组合方法，创作自己的珍奇菜肴。
+                                    <br/> 它不仅是一种开放的厨房，
+                                    <br/> 更是一种更加深入，互动性更强的厨房。
+                                    <br/> 收集各种装饰品，自由定制自己的厨房。
+                                    <br/> 从世界各地的商人手里购买新奇的厨具，成为小镇最强的厨师。<br/>
+
+
+
+
                                 </p>
                             </div>
                         </div>
@@ -205,10 +212,8 @@
                                     探寻小镇的故事
                                 </h2>
                                 <p class="normal" style="text-align: right;">
-                                    示例文字示例文字示例文字示例文字。
-                                    <br /> 示例文字示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。 <br /> 示例文字示例。 <br /> 示例文字示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。
-                                    <br /> 示例文字示例。 <br /> 示例文字示例文字示例文字示例文字示例文字。
-                                    <br /> 示例文字示例文字示例文字示例文字。 <br /> 示例文字示例文字。 <br /> 示例文字示例。
+                                    与来自四面八方的食客谈天说地，
+                                    <br /> 了解每一位食客背后不为人知的小故事。 <br /> 请小心，个性迥异的食客们也许会给你的餐馆带来不同的影响。 <br /> 花时间与他们相处也许会解锁新的秘密。 <br /> 有些食客会向你寻求帮助， <br /> 你的选择不仅会对你的故事造成影响， <br /> 更有可能改变他们的命运。 <br />
                                 </p>
                             </div>
                             <div class="col-6" style="text-align: right;">
@@ -458,6 +463,12 @@
                 easing: 'easeOutElastic',
             });
         })
+    });
+    $(function() {
+        console.log($.cookie('account'));
+        if ($.cookie('account') == undefined) {
+            $("#panel").text("登录");
+        }
     })
 </script>
 

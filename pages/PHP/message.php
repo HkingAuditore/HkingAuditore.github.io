@@ -26,6 +26,9 @@
     <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
     <link href="../../css/message.css" rel="stylesheet"/>
     <script src="../../scripts/audioPlayer.js"></script>
+    <script src="../../scripts/jquery.cookie.js"></script>
+
+
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
@@ -109,7 +112,7 @@
             </div>
             <div class="col-8 offset-4">
                 <div align="right" class="mainBar" style="margin-top: 1vw;">
-                    <a href="userInfo.php" style="text-decoration: none;">个人面板</a>
+                    <a href="userInfo.php" style="text-decoration: none;" id="panel">个人面板</a>
                     <a href="../art.html" style="text-decoration: none;">艺术设定</a>
                     <a href="message.php" style="text-decoration: none;">留言板</a>
                     <a href="../devLog.php" style="text-decoration: none;">开发日志</a>
@@ -213,6 +216,14 @@
     ?>
 </div>
 </body>
+<script>
+    $(function() {
+        console.log($.cookie('account'));
+        if ($.cookie('account') == undefined) {
+            $("#panel").text("登录");
+        }
+    })
+</script>
 
 
 </html>
