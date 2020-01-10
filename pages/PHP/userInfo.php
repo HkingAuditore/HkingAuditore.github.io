@@ -25,8 +25,8 @@
     <script src="../../scripts/audioPlayer.js"></script>
     <!--    <script src="../scripts/cookieProcess.js"></script>-->
     <?php 
-    echo "<script>console.log(\"isPHP:".$_COOKIE["account"]."\");</script>";
-    echo "<script>console.log(\"isJQ:\"+$.cookie('account'));</script>";
+    // echo "<script>console.log(\"isPHP:".$_COOKIE["account"]."\");</script>";
+    // echo "<script>console.log(\"isJQ:\"+$.cookie('account'));</script>";
     if(isset($_COOKIE["account"]) && !($_COOKIE["account"] === "null")){
         echo "<script>console.log(\"is:".$_COOKIE["account"]."\");</script>";
         $account = $_COOKIE["account"];
@@ -41,7 +41,7 @@
         mysqli_free_result($retval);
         mysqli_close($conn);
     }else{
-        echo "<script>console.log(\"is:".$_COOKIE["account"]."\");</script>";
+        // echo "<script>console.log(\"is:".$_COOKIE["account"]."\");</script>";
         header("Location: ../login.html");
         exit();
     }
@@ -120,7 +120,7 @@
                     <h6><span id="favor"></span></h6>
                 </div>
             </div>
-            <div class="row info-card"
+            <!-- <div class="row info-card"
                  style="box-shadow: 2px 2px 10px 3px rgba(0,0,0,0); border:1px solid rgba(83,82,80,0.42);width: 60%">
 
                 <div class="col-2" style="text-align: left;">
@@ -129,7 +129,7 @@
                 <div class="col-4" style="text-align: left;">
                     <h6><span id="class"></span></h6>
                 </div>
-            </div>
+            </div> -->
             <div class="row  info-card"
                  style="box-shadow: 2px 2px 10px 3px rgba(0,0,0,0); border:1px solid rgba(83,82,80,0.42);width: 60%">
                 <div class="col">
@@ -189,7 +189,7 @@
                     }
                     document.getElementById("email").innerHTML = userData.email;
                     document.getElementById("favor").innerHTML = userData.favor;
-                    document.getElementById("class").innerHTML = userData.classname;
+                    // document.getElementById("class").innerHTML = userData.classname;
                     // alert(userData.enableemail);
                     if (userData.enableemail != "enable") {
                         document.getElementById("enable").innerHTML = "不";

@@ -7,7 +7,7 @@ $account =$_POST["account"];
 $username =$_POST["userName"];
 $email =$_POST["email"];
 $gender =$_POST["gender"];
-$classname =$_POST["className"];
+// $classname =$_POST["className"];
 $favor_arr=array();
 $favor_arr=$_POST["favor"];
 $favor = implode(',', $favor_arr);
@@ -53,9 +53,9 @@ $conn = mysqli_connect('localhost:3306', 'root', '59951308');
 mysqli_query($conn , "set names utf8");
 
 $sql = "INSERT INTO userdata.userinfo ".
-    "(account,username,email,gender,classname,favor,pwd,edition,enableemail) ".
+    "(account,username,email,gender,favor,pwd,edition,enableemail) ".
     "VALUES ".
-    "('$account','$username','$email','$gender','$classname','$favor','$pwd','$edition','$enableemail')";
+    "('$account','$username','$email','$gender','$favor','$pwd','$edition','$enableemail')";
 
 mysqli_select_db( $conn, 'userdata' );
 $retval = mysqli_query( $conn, $sql );

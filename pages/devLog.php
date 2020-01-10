@@ -173,7 +173,7 @@
                     最新日志
                 </div>
                 <hr>
-                <div class=" author">
+                <div class=" author" id=" author">
                     @HkingAuditore
                 </div>
                 <hr>

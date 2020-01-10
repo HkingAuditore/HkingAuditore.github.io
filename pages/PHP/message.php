@@ -92,8 +92,10 @@
 
     <script>
         var userData =
-            <?php
+        <?php
+            if (!empty($content) && !empty($account)) {
             echo json_encode($row);
+            }
             ?>
         ;
     </script>
